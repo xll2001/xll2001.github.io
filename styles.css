@@ -382,6 +382,7 @@ h3 {
   background: var(--surface);
   box-shadow: var(--shadow-sm);
   overflow: hidden;
+  scroll-margin-top: 96px;
 }
 
 .card-thumb {

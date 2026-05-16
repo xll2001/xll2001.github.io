@@ -204,7 +204,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 10px;
   margin-bottom: 10px;
 }
 
@@ -213,10 +213,10 @@ h3 {
 }
 
 .research-map {
-  flex: 0 0 96px;
-  width: 96px;
+  flex: 0 0 58px;
+  width: 58px;
   margin: 0;
-  padding: 6px;
+  padding: 4px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
@@ -639,13 +639,13 @@ h3 {
   }
 
   .research-title-row {
-    gap: 12px;
+    gap: 8px;
   }
 
   .research-map {
-    flex-basis: 76px;
-    width: 76px;
-    padding: 5px;
+    flex-basis: 48px;
+    width: 48px;
+    padding: 3px;
   }
 
   .news-item,

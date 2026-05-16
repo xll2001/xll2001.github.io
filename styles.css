@@ -213,8 +213,8 @@ h3 {
 }
 
 .research-map {
-  flex: 0 0 58px;
-  width: 58px;
+  flex: 0 0 72px;
+  width: 72px;
   margin: 0;
   padding: 4px;
   border: 1px solid var(--line);
@@ -643,8 +643,8 @@ h3 {
   }
 
   .research-map {
-    flex-basis: 48px;
-    width: 48px;
+    flex-basis: 58px;
+    width: 58px;
     padding: 3px;
   }
 

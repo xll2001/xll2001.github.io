@@ -201,9 +201,9 @@ h3 {
 }
 
 .research-map {
-  max-width: 880px;
-  margin: 0 auto 30px;
-  padding: 18px;
+  max-width: 640px;
+  margin: 28px auto 0;
+  padding: 12px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);

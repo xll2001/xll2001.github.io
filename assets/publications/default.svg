@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Default publication illustration</title>
+  <desc id="desc">An abstract illustration for ongoing or unpublished work.</desc>
+  <rect width="900" height="520" fill="#f7f4ee"/>
+  <rect x="72" y="72" width="756" height="376" rx="28" fill="#ffffff" stroke="#d8d1c5" stroke-width="4"/>
+  <path d="M136 350c74-88 145-100 213-36 73 68 150 44 216-72 51-90 112-106 184-40" fill="none" stroke="#2f6fdd" stroke-width="18" stroke-linecap="round"/>
+  <path d="M132 182h148M132 232h92M132 282h174" stroke="#9a6417" stroke-width="16" stroke-linecap="round"/>
+  <rect x="590" y="154" width="174" height="74" rx="16" fill="#e9f2ff" stroke="#2f6fdd" stroke-width="5"/>
+  <rect x="604" y="268" width="128" height="74" rx="16" fill="#fff0d7" stroke="#9a6417" stroke-width="5"/>
+  <circle cx="430" cy="166" r="42" fill="#f1d7df" stroke="#9b4a5a" stroke-width="5"/>
+  <path d="M408 166h44M430 144v44" stroke="#9b4a5a" stroke-width="10" stroke-linecap="round"/>
+  <path d="M560 192h-88M604 306h-88" stroke="#45515f" stroke-width="8" stroke-linecap="round" stroke-dasharray="18 16"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">Cartoon avatar placeholder for Longlong Xu</title>
+  <desc id="desc">A simple friendly cartoon avatar used as a temporary profile image.</desc>
+  <rect width="640" height="640" fill="#f4efe7"/>
+  <circle cx="320" cy="318" r="226" fill="#e9f2ff"/>
+  <path d="M128 510c32-100 108-154 192-154s160 54 192 154v60H128z" fill="#2f6fdd"/>
+  <path d="M218 244c0-78 43-132 102-132s102 54 102 132v56c0 65-45 112-102 112s-102-47-102-112z" fill="#f4c7a1"/>
+  <path d="M208 250c8-96 56-154 130-154 56 0 98 30 118 84-46-6-95-25-132-58-24 48-62 84-116 128z" fill="#20242c"/>
+  <path d="M218 282c-18 0-32 15-32 34 0 18 14 32 32 32z" fill="#f4c7a1"/>
+  <path d="M422 282c18 0 32 15 32 34 0 18-14 32-32 32z" fill="#f4c7a1"/>
+  <circle cx="276" cy="292" r="10" fill="#20242c"/>
+  <circle cx="364" cy="292" r="10" fill="#20242c"/>
+  <path d="M296 348c14 12 34 12 48 0" fill="none" stroke="#20242c" stroke-width="10" stroke-linecap="round"/>
+  <path d="M236 266c24-16 48-18 72-4" fill="none" stroke="#20242c" stroke-width="10" stroke-linecap="round"/>
+  <path d="M332 262c24-14 48-12 72 4" fill="none" stroke="#20242c" stroke-width="10" stroke-linecap="round"/>
+  <path d="M258 406c20 20 42 30 62 30s42-10 62-30l16 58H242z" fill="#f4c7a1"/>
+  <path d="M174 524c34-58 84-86 146-86s112 28 146 86" fill="none" stroke="#1d4f9a" stroke-width="28" stroke-linecap="round"/>
+  <circle cx="512" cy="128" r="38" fill="#fff0d7"/>
+  <path d="M505 112l22 18-30 28" fill="none" stroke="#9a6417" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="120" cy="186" r="26" fill="#f1d7df"/>
+  <path d="M110 186h20M120 176v20" stroke="#9b4a5a" stroke-width="8" stroke-linecap="round"/>
+</svg>

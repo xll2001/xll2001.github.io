@@ -200,10 +200,23 @@ h3 {
   object-fit: cover;
 }
 
+.research-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.research-title-row h2 {
+  margin-bottom: 0;
+}
+
 .research-map {
-  max-width: 640px;
-  margin: 28px auto 0;
-  padding: 12px;
+  flex: 0 0 96px;
+  width: 96px;
+  margin: 0;
+  padding: 6px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
@@ -623,6 +636,16 @@ h3 {
 
   .section-header h2 {
     font-size: 2.15rem;
+  }
+
+  .research-title-row {
+    gap: 12px;
+  }
+
+  .research-map {
+    flex-basis: 76px;
+    width: 76px;
+    padding: 5px;
   }
 
   .news-item,

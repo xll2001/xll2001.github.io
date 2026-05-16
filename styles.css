@@ -209,23 +209,29 @@ h3 {
   object-fit: cover;
 }
 
-.research-title-row {
+.research-header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 34px;
+  max-width: none;
+  text-align: left;
+}
+
+.research-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.research-copy h2 {
   margin-bottom: 10px;
 }
 
-.research-title-row h2 {
-  margin-bottom: 0;
-}
-
 .research-map {
-  flex: 0 0 72px;
-  width: 72px;
+  flex: 0 0 190px;
+  width: 190px;
   margin: 0;
-  padding: 4px;
+  padding: 8px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
@@ -635,6 +641,16 @@ h3 {
     flex-direction: column;
   }
 
+  .research-header {
+    align-items: center;
+    gap: 22px;
+  }
+
+  .research-map {
+    flex-basis: 150px;
+    width: 150px;
+  }
+
   .paper-card {
     flex-direction: column;
   }
@@ -679,14 +695,14 @@ h3 {
     font-size: 2.15rem;
   }
 
-  .research-title-row {
-    gap: 8px;
+  .research-header {
+    gap: 14px;
   }
 
   .research-map {
-    flex-basis: 58px;
-    width: 58px;
-    padding: 3px;
+    flex-basis: 104px;
+    width: 104px;
+    padding: 5px;
   }
 
   .news-item,

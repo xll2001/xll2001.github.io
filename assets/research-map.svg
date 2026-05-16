@@ -1,51 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
-  <title id="title">Research map</title>
-  <desc id="desc">A diagram connecting multimodal LLMs, post-training, AIOps, time series, evaluation, and root-cause analysis.</desc>
-  <rect width="720" height="720" fill="#ffffff"/>
-  <g stroke="#d9dee8" stroke-width="2">
-    <path d="M360 150 L520 250 L500 470 L360 560 L210 470 L190 250 Z" fill="none"/>
-    <path d="M360 150 L360 560"/>
-    <path d="M190 250 L500 470"/>
-    <path d="M520 250 L210 470"/>
-    <path d="M190 250 L520 250"/>
-    <path d="M210 470 L500 470"/>
+  <title id="title">Research focus map</title>
+  <desc id="desc">A four-part research map covering LLM post-training and reasoning, LLM evaluation and benchmarking, reliable forecasting and diagnosis, and robust AI systems.</desc>
+  <rect width="720" height="720" rx="42" fill="#fbf7ef"/>
+  <circle cx="360" cy="360" r="220" fill="#ffffff" stroke="#e5d6c5" stroke-width="3"/>
+  <g stroke="#d8c7b4" stroke-width="5" stroke-linecap="round">
+    <path d="M360 260 L240 190"/>
+    <path d="M460 335 L565 240"/>
+    <path d="M360 462 L250 560"/>
+    <path d="M460 452 L565 535"/>
   </g>
+
   <g>
-    <circle cx="360" cy="150" r="58" fill="#e9f7f8" stroke="#007c89" stroke-width="3"/>
-    <text x="360" y="141" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#17191f">Multimodal</text>
-    <text x="360" y="166" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#17191f">LLMs</text>
-
-    <circle cx="520" cy="250" r="62" fill="#fff4e3" stroke="#b87514" stroke-width="3"/>
-    <text x="520" y="242" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#17191f">Post-</text>
-    <text x="520" y="267" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#17191f">Training</text>
-
-    <circle cx="500" cy="470" r="62" fill="#fbeaf4" stroke="#b83280" stroke-width="3"/>
-    <text x="500" y="462" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#17191f">LLM</text>
-    <text x="500" y="487" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#17191f">Evaluation</text>
-
-    <circle cx="360" cy="560" r="58" fill="#eef6ef" stroke="#2f7d4f" stroke-width="3"/>
-    <text x="360" y="552" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#17191f">Root-Cause</text>
-    <text x="360" y="577" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#17191f">Analysis</text>
-
-    <circle cx="210" cy="470" r="62" fill="#edf0ff" stroke="#5964c8" stroke-width="3"/>
-    <text x="210" y="462" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#17191f">Time</text>
-    <text x="210" y="487" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#17191f">Series</text>
-
-    <circle cx="190" cy="250" r="62" fill="#f1f3f7" stroke="#5e6573" stroke-width="3"/>
-    <text x="190" y="242" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#17191f">AIOps</text>
-    <text x="190" y="267" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#17191f">Signals</text>
+    <rect x="252" y="292" width="216" height="136" rx="22" fill="#1f2933"/>
+    <text x="360" y="342" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#ffffff">LLM Systems</text>
+    <text x="360" y="378" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#f6e6d3">for practical</text>
+    <text x="360" y="407" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#f6e6d3">decision making</text>
   </g>
+
   <g>
-    <rect x="250" y="315" width="220" height="90" rx="8" fill="#17191f"/>
-    <text x="360" y="350" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Multimodal</text>
-    <text x="360" y="378" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Reasoning</text>
+    <rect x="92" y="96" width="240" height="118" rx="22" fill="#e7f4ef" stroke="#12746c" stroke-width="4"/>
+    <text x="212" y="136" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#183b3a">Post-Training</text>
+    <text x="212" y="168" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#315a58">&amp; Reasoning</text>
   </g>
-  <g fill="#17191f" opacity="0.12">
-    <circle cx="102" cy="116" r="5"/>
-    <circle cx="124" cy="138" r="3"/>
-    <circle cx="608" cy="114" r="4"/>
-    <circle cx="630" cy="138" r="6"/>
-    <circle cx="94" cy="608" r="4"/>
-    <circle cx="616" cy="620" r="5"/>
+
+  <g>
+    <rect x="442" y="142" width="212" height="128" rx="22" fill="#fff0e8" stroke="#cf5f3d" stroke-width="4"/>
+    <text x="548" y="185" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#5d2c1d">LLM Evaluation</text>
+    <text x="548" y="217" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#7b4735">&amp; Benchmarking</text>
+  </g>
+
+  <g>
+    <rect x="86" y="500" width="260" height="128" rx="22" fill="#fff7dc" stroke="#b88918" stroke-width="4"/>
+    <text x="216" y="538" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#5b4310">Reliable Forecasting</text>
+    <text x="216" y="570" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#765a1f">&amp; Diagnosis</text>
+  </g>
+
+  <g>
+    <rect x="450" y="492" width="218" height="128" rx="22" fill="#eef3df" stroke="#667b35" stroke-width="4"/>
+    <text x="559" y="535" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#34421d">Robust AI</text>
+    <text x="559" y="567" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#53642e">Systems</text>
+  </g>
+
+  <g fill="#1f2933" opacity="0.12">
+    <circle cx="72" cy="340" r="5"/>
+    <circle cx="92" cy="368" r="3"/>
+    <circle cx="640" cy="344" r="4"/>
+    <circle cx="662" cy="374" r="6"/>
+    <circle cx="354" cy="70" r="4"/>
+    <circle cx="392" cy="650" r="5"/>
   </g>
 </svg>

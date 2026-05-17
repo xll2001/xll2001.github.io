@@ -507,18 +507,102 @@ h3 {
 .pub-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 8px;
   margin: 14px 0 0;
 }
 
 .pub-links a {
-  color: #1a1a1a;
-  font-size: 0.86rem;
-  font-weight: 850;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 28px;
+  padding: 4px 10px 4px 6px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 760;
+  line-height: 1;
+  letter-spacing: 0;
+  box-shadow: 0 1px 0 rgba(20, 26, 32, 0.04);
 }
 
 .pub-links a:hover {
-  color: var(--accent);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(20, 26, 32, 0.09);
+}
+
+.pub-links a::before {
+  display: inline-grid;
+  min-width: 24px;
+  height: 18px;
+  padding: 0 4px;
+  place-items: center;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 0.58rem;
+  font-weight: 850;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.pub-links .link-paper {
+  color: #245fb5;
+  background: #eef5ff;
+}
+
+.pub-links .link-paper::before {
+  content: "PDF";
+  background: #245fb5;
+}
+
+.pub-links .link-code {
+  color: #7a5b00;
+  background: #fff8de;
+}
+
+.pub-links .link-code::before {
+  content: "</>";
+  background: #7a5b00;
+}
+
+.pub-links .link-data {
+  color: #1b7358;
+  background: #eefaf5;
+}
+
+.pub-links .link-data::before {
+  content: "DB";
+  background: #1b7358;
+}
+
+.pub-links .link-demo {
+  color: #9a5420;
+  background: #fff3e9;
+}
+
+.pub-links .link-demo::before {
+  content: "RUN";
+  background: #9a5420;
+}
+
+.pub-links .link-model {
+  color: #7047a4;
+  background: #f6f0ff;
+}
+
+.pub-links .link-model::before {
+  content: "AI";
+  background: #7047a4;
+}
+
+.pub-links .link-leaderboard {
+  color: #9a405d;
+  background: #fff0f5;
+}
+
+.pub-links .link-leaderboard::before {
+  content: "#";
+  background: #9a405d;
 }
 
 .experience-list {

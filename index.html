@@ -6,12 +6,12 @@
     <title>Longlong Xu - Homepage</title>
     <meta
       name="description"
-      content="Longlong Xu is a Ph.D. candidate at Tsinghua University and NetMan Lab, advised by Prof. Dan Pei, working on multimodal LLMs, post-training, reasoning, evaluation, and AIOps."
+      content="Longlong Xu is a Ph.D. student at Tsinghua University and NetMan Lab, advised by Prof. Dan Pei, working on LLM post-training, multimodal LLM alignment and reasoning, long-sequence numerical data, and AIOps."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@700;800;900&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260517-4" />
+    <link rel="stylesheet" href="styles.css?v=20260619-1" />
   </head>
   <body>
     <header class="site-header">
@@ -31,19 +31,24 @@
     <main id="top" class="container">
       <section class="hero">
         <div class="hero-text">
-          <span class="hero-subtitle">Ph.D. Candidate • Tsinghua University</span>
+          <span class="hero-subtitle">Ph.D. Student • Tsinghua University</span>
           <h1>Longlong Xu</h1>
           <p class="hero-bio">
-            I am a Ph.D. candidate in the Department of Computer Science and Technology at <strong class="highlight">Tsinghua University</strong>, advised by
+            I am a Ph.D. student in the Department of Computer Science and Technology at <strong class="highlight">Tsinghua University</strong>, advised by
             <a href="https://netman.aiops.org/~peidan/"><strong>Prof. Dan Pei</strong></a> in
-            <a href="https://netman.aiops.org/"><strong>NetMan Lab</strong></a>. My research lies at the intersection of <strong class="highlight">multimodal large language models</strong>, <strong class="highlight">post-training</strong>, <strong class="highlight">alignment</strong>, <strong class="highlight">reasoning</strong>, and their applications in <strong class="highlight">AIOps</strong>.
+            <a href="https://netman.aiops.org/"><strong>NetMan Lab</strong></a>. My research lies at the intersection of <strong class="highlight">LLM post-training</strong>, <strong class="highlight">multimodal LLM alignment</strong>, <strong class="highlight">reasoning</strong>, and their applications to <strong class="highlight">long-sequence numerical data</strong> and <strong class="highlight">AIOps</strong>.
           </p>
           <p class="hero-bio">
-            My recent work focuses on <strong class="highlight">LLM post-training and reasoning</strong> in practical, data-rich settings: aligning model behavior with <strong>human intent</strong>, improving <strong>long-sequence numerical understanding</strong> through multimodal perception and tool use, and building <strong>reliable evaluation protocols</strong> for domain-specific LLMs.
+            My recent work focuses on <strong class="highlight">LLM post-training and reasoning</strong> in practical, data-rich settings: aligning model behavior with <strong>user intent</strong>, improving <strong>fine-grained localization</strong> over long numerical sequences through multimodal perception and tool use, and building <strong>reliable evaluation protocols</strong> for domain-specific LLMs.
           </p>
           <p class="hero-bio">
-            I received my B.E. degree in Computer Science and Technology from <strong class="highlight">Tsinghua University</strong> in 2023. I have held algorithm research internships at <strong>ByteDance</strong>, <strong>Huawei</strong>, <strong>ZTE</strong>, <strong>eBay</strong>, and <strong>RealAI</strong>, producing <strong class="highlight">two first-author ICML 2026 papers</strong> and first-author projects on LLM post-training, multimodal reasoning, and fault diagnosis.
+            I received my B.E. degree in Computer Science and Technology from <strong class="highlight">Tsinghua University</strong> in 2023. I have held algorithm research internships at <strong>ByteDance</strong>, <strong>Huawei</strong>, <strong>ZTE</strong>, <strong>eBay</strong>, and <strong>RealAI</strong>, producing <strong class="highlight">two first-author ICML 2026 papers</strong> and <strong class="highlight">two first-author CCF-A submissions under review</strong>.
           </p>
+          <div class="hero-metrics" aria-label="Research highlights">
+            <span><strong>2</strong> first-author ICML papers</span>
+            <span><strong>2</strong> first-author CCF-A submissions</span>
+            <span><strong>100+</strong> ChatTS citations</span>
+          </div>
           <div class="hero-links" aria-label="Profile links">
             <a class="button primary" href="#publications">View Publications</a>
             <a class="button" href="assets/XuLonglong-en_US.pdf">English CV</a>
@@ -76,9 +81,9 @@
             <a class="pillar-link" href="#pub-llm-evaluation">View Work →</a>
           </article>
           <article class="pillar-card">
-            <h3>Reliable Forecasting &amp; Diagnosis</h3>
-            <p>Robust time-series forecasting, efficient inference-time scaling, and <strong>fault localization under real distribution shifts</strong>.</p>
-            <a class="pillar-link" href="#pub-reliable-diagnosis">View Work →</a>
+            <h3>Long-Sequence Numerical Modeling</h3>
+            <p>Robust forecasting, global-context modeling, inference-time enhancement, and <strong>efficient long-context access</strong>.</p>
+            <a class="pillar-link" href="#pub-long-sequence">View Work →</a>
           </article>
           <article class="pillar-card">
             <h3>Robust AI Systems</h3>
@@ -126,41 +131,30 @@
           <article class="paper-card" id="pub-post-training">
             <div class="card-thumb tone-blue"><span>LLM<br />Post-Training</span></div>
             <div class="card-content">
-              <div class="meta-row"><span>Ongoing work</span><span>First author</span></div>
+              <div class="meta-row"><span>CCF A under review</span><span>First author</span></div>
               <p class="focus-line"><span>Research Focus</span><a href="#research">LLM Post-Training &amp; Reasoning</a></p>
-              <h3>Intent-Aligned LLM Post-Training for Time-Series Anomaly Detection</h3>
+              <h3>User-Intent-Aligned LLM Post-Training for Long-Sequence Anomaly Detection</h3>
               <p class="authors"><strong class="me">Longlong Xu</strong>, et al.</p>
-              <p class="paper-desc">Aligns anomaly decisions with <strong>user intent</strong> by combining structured intent parsing, memory retrieval, verification, <strong>supervised fine-tuning</strong>, and <strong>reinforcement learning</strong>.</p>
+              <p class="paper-desc">Builds a user-intent-aligned LLM solution for anomaly detection over long numerical sequences by combining <strong>structured intent parsing</strong>, autonomous memory retrieval, and <strong>Agentic RL</strong>; deployed in ByteDance's practical development environment.</p>
             </div>
           </article>
 
           <article class="paper-card">
             <div class="card-thumb tone-purple"><span>Multimodal<br />Reasoning</span></div>
             <div class="card-content">
-              <div class="meta-row"><span>Ongoing work</span><span>First author</span></div>
+              <div class="meta-row"><span>CCF A under review</span><span>First author</span></div>
               <p class="focus-line"><span>Research Focus</span><a href="#research">LLM Post-Training &amp; Reasoning</a></p>
-              <h3>Multimodal LLM Reasoning over Long Numerical Sequences</h3>
+              <h3>Active-Perception Tool Use for Fine-Grained Anomaly Localization</h3>
               <p class="authors"><strong class="me">Longlong Xu</strong>, et al.</p>
-              <p class="paper-desc">Improves <strong>numerical precision</strong> and <strong>fine-grained localization</strong> for long sequence analysis through glance-and-gaze reasoning and <strong>multi-turn tool-use trajectories</strong>.</p>
+              <p class="paper-desc">Addresses localization errors in long-sequence anomaly detection with <strong>multi-turn tool-use active perception</strong>, a location-sensitive numerical sequence encoder, rule-based data synthesis, and <strong>SFT + GRPO</strong>.</p>
             </div>
           </article>
 
-          <article class="paper-card" id="pub-reliable-diagnosis">
-            <div class="card-thumb tone-slate"><span>Fault<br />Diagnosis</span></div>
-            <div class="card-content">
-              <div class="meta-row"><span>Ongoing work</span><span>First author</span></div>
-              <p class="focus-line"><span>Research Focus</span><a href="#research">Reliable Forecasting &amp; Diagnosis</a></p>
-              <h3>Software-Change-Aware Fault Diagnosis for Online Service Systems</h3>
-              <p class="authors"><strong class="me">Longlong Xu</strong>, et al.</p>
-              <p class="paper-desc">Stabilizes fault diagnosis under <strong>software-induced distribution shifts</strong> with change-aware alignment and <strong>contrastive fault clustering</strong>.</p>
-            </div>
-          </article>
-
-          <article class="paper-card">
+          <article class="paper-card" id="pub-long-sequence">
             <div class="card-thumb"><img src="assets/publications/generated/tamer.png" alt="TameR paper figure." /></div>
             <div class="card-content">
               <div class="meta-row"><span>ICML 2026 · CCF A</span><span>First author</span></div>
-              <p class="focus-line"><span>Research Focus</span><a href="#research">Reliable Forecasting &amp; Diagnosis</a></p>
+              <p class="focus-line"><span>Research Focus</span><a href="#research">Long-Sequence Numerical Modeling</a></p>
               <h3>Taming the Recent-Data Bias: Towards Robust Time Series Forecasting with Global Context</h3>
               <p class="authors"><strong class="me">Longlong Xu</strong>, Zeyan Li, Xiao He, Zhaoyang Yu, Changhua Pei, Zhe Xie, Zijun Dou, Tieying Zhang, Dan Pei</p>
               <p class="paper-desc">Identifies <strong>recent-data bias</strong> as a key robustness bottleneck in time-series forecasting and mitigates it with <strong>global-context modeling</strong>.</p>
@@ -172,7 +166,7 @@
             <div class="card-thumb"><img src="assets/publications/generated/sprint.png" alt="SPRINT paper figure." /></div>
             <div class="card-content">
               <div class="meta-row"><span>ICML 2026 · CCF A</span><span>First author</span></div>
-              <p class="focus-line"><span>Research Focus</span><a href="#research">Reliable Forecasting &amp; Diagnosis</a></p>
+              <p class="focus-line"><span>Research Focus</span><a href="#research">Long-Sequence Numerical Modeling</a></p>
               <h3>See More, Forecast Better and Faster: Enhancing Time Series Foundation Models via Inference-Time Plug-and-Play Downsampling</h3>
               <p class="authors"><strong class="me">Longlong Xu</strong>, Zeyan Li, Xiao He, Zhaoyang Yu, Dazhong Wen, Mingze Sun, Changhua Pei, Dan Pei</p>
               <p class="paper-desc">A <strong>training-free inference-time scaling framework</strong> that improves forecasting accuracy by <strong>19%</strong>, reduces peak memory by <strong>6.4x</strong>, and reduces inference time by <strong>16.9x</strong>.</p>
@@ -184,7 +178,7 @@
             <div class="card-thumb"><img src="assets/publications/generated/latentscope.png" alt="LatentScope root-cause localization framework figure." /></div>
             <div class="card-content">
               <div class="meta-row"><span>KDD 2024 · CCF A</span><span>Co-author</span></div>
-              <p class="focus-line"><span>Research Focus</span><a href="#research">Reliable Forecasting &amp; Diagnosis</a></p>
+              <p class="focus-line"><span>Research Focus</span><a href="#research">Long-Sequence Numerical Modeling</a></p>
               <h3>Microservice Root Cause Analysis With Limited Observability Through Intervention Recognition in the Latent Space</h3>
               <p class="authors">Zhe Xie, Shenglin Zhang, Yitong Geng, Yao Zhang, Minghua Ma, Xiaohui Nie, Zhenhe Yao, <strong class="me">Longlong Xu</strong>, Yongqian Sun, Wentao Li, Dan Pei</p>
               <p class="paper-desc">Proposes <strong>LatentScope</strong>, an unsupervised RCA framework that models heterogeneous root-cause candidates as <strong>latent variables</strong> under limited observability, with validation in <strong>eBay production scenarios</strong>.</p>
@@ -207,11 +201,11 @@
           <article class="paper-card">
             <div class="card-thumb"><img src="assets/publications/generated/chatts.png" alt="ChatTS time-series multimodal LLM figure." /></div>
             <div class="card-content">
-              <div class="meta-row"><span>VLDB 2025 · CCF A · 85+ citations</span><span>4th author</span></div>
+              <div class="meta-row"><span>VLDB 2025 · CCF A · 100+ citations</span><span>4th author</span></div>
               <p class="focus-line"><span>Research Focus</span><a href="#research">LLM Post-Training &amp; Reasoning</a></p>
               <h3>ChatTS: Aligning Time Series with LLMs via Synthetic Data for Enhanced Understanding and Reasoning</h3>
               <p class="authors">Zhe Xie, Zeyan Li, Xiao He, <strong class="me">Longlong Xu</strong>, Xidao Wen, Tieying Zhang, Jianjun Chen, Rui Shi, Dan Pei</p>
-              <p class="paper-desc">Introduces <strong>time series as a first-class modality</strong> for LLM-based numerical question answering and reasoning.</p>
+              <p class="paper-desc">Introduces <strong>long-sequence numerical data as a first-class modality</strong> for LLM-based understanding and reasoning, with <strong>450+ GitHub stars</strong> and <strong>20K+ model downloads</strong> as of Jun. 2026.</p>
               <p class="pub-links"><a class="link-paper" href="https://netman.aiops.org/wp-content/uploads/2025/05/VLDB_2025_Camera_Ready-1.pdf">Paper</a><a class="link-code" href="https://github.com/NetManAIOps/ChatTS">Code</a><a class="link-demo" href="https://huggingface.co/spaces/xiezhe22/ChatTS">Demo</a><a class="link-model" href="https://huggingface.co/bytedance-research/ChatTS-14B">Model</a></p>
             </div>
           </article>
@@ -267,7 +261,7 @@
           <article class="paper-card">
             <div class="card-thumb"><img src="assets/publications/generated/face3dadv.png" alt="Overall simulation framework for developing physical attacks figure." /></div>
             <div class="card-content">
-              <div class="meta-row"><span>IJCV 2025 · CCF A · 8+ citations</span><span>2nd author</span></div>
+              <div class="meta-row"><span>IJCV 2024 · CCF A</span><span>2nd author</span></div>
               <p class="focus-line"><span>Research Focus</span><a href="#research">Robust AI Systems</a></p>
               <h3>Face3DAdv: Exploiting Robust Adversarial 3D Patches on Physical Face Recognition</h3>
               <p class="authors">Xiao Yang, <strong class="me">Longlong Xu</strong>, Tianyu Pang, Yinpeng Dong, Yikai Wang, Hang Su, Jun Zhu</p>
@@ -285,24 +279,24 @@
         </div>
         <div class="experience-list">
           <article>
-            <div class="row-heading"><h3>ByteDance</h3><span>May 2025 - May 2026</span></div>
-            <p>Algorithm Engineer. Research on <strong>LLM post-training</strong>, multimodal reasoning, inference-time enhancement, and multi-turn reasoning evaluation. <strong>Outputs:</strong> first-author papers <strong>TameR</strong> and <strong>SPRINT</strong> (ICML 2026, CCF A); two first-author ongoing works on LLM post-training and multimodal reasoning; a related intent-aligned anomaly-detection line <strong>validated in an internal intelligent alerting workflow</strong>.</p>
+            <div class="row-heading"><h3>ByteDance</h3><span>Jan. 2025 - Jun. 2026</span></div>
+            <p>Algorithm Engineer. Worked on <strong>LLM post-training for anomaly detection</strong>, multimodal LLM alignment and reasoning over long-sequence numerical data, and foundation-model enhancement. <strong>Outputs:</strong> first-author papers <strong>TameR</strong> and <strong>SPRINT</strong> (ICML 2026, CCF A); two first-author CCF-A submissions under review; co-authored <strong>ChatTS</strong> (VLDB 2025) and <strong>FoundRoot</strong> (ICSE 2026). Models were deployed and validated in internal business or production environments.</p>
           </article>
           <article>
-            <div class="row-heading"><h3>Huawei</h3><span>Oct. 2024 - Apr. 2025</span></div>
-            <p>Algorithm Engineer. Researched <strong>OTN-STFM</strong> for optical transport networks, combining metrics, alarms, and topology for anomaly detection and root-cause localization. <strong>Outputs:</strong> an internally validated optical-network fault-localization model, <strong>practically validated</strong> on internal backbone-network fault-localization tasks.</p>
+            <div class="row-heading"><h3>Huawei</h3><span>Jun. 2024 - Dec. 2024</span></div>
+            <p>Algorithm Engineer. Researched <strong>OTN-STFM</strong>, a multisource spatio-temporal representation foundation model for optical transport networks, jointly modeling metrics, alarms, and topology for anomaly detection, fault localization, and degradation perception. It achieved <strong>91.32% top-1 root-cause localization accuracy</strong> on 242 real fault cases and was validated in internal backbone-network fault-localization tasks. Also contributed to <strong>Eagle</strong> (FSE 2026).</p>
           </article>
           <article>
-            <div class="row-heading"><h3>ZTE</h3><span>Nov. 2023 - Sep. 2024</span></div>
-            <p>Algorithm Engineer. Built operations-domain LLM QA data, document-driven benchmark generation, and automated QA evaluation pipelines. <strong>Outputs:</strong> co-author papers <strong>OpsEval</strong> (FSE 2025, CCF A), <strong>Eagle</strong> (FSE 2026, CCF A), and <strong>TechSupportEval</strong> (IJCNN 2025, THU B, CCF C); the evaluation pipelines were used for <strong>internal practical LLM development and assessment</strong>.</p>
+            <div class="row-heading"><h3>ZTE</h3><span>Jan. 2024 - May 2024</span></div>
+            <p>Algorithm Engineer. Collected and cleaned network-domain corpora, generated QA data, fine-tuned general LLMs, and participated in building LLM evaluation benchmarks for network operations. <strong>Outputs:</strong> co-authored <strong>OpsEval</strong> (FSE 2025) and <strong>TechSupportEval</strong> (IJCNN 2025); the public leaderboard has exceeded <strong>2 million visits</strong> as of Jun. 2026.</p>
           </article>
           <article>
-            <div class="row-heading"><h3>eBay</h3><span>May 2023 - Oct. 2023</span></div>
+            <div class="row-heading"><h3>eBay</h3><span>Aug. 2023 - Dec. 2023</span></div>
             <p>Algorithm Engineer. Developed latent-space intervention recognition algorithms for root-cause localization in complex internal systems. <strong>Outputs:</strong> co-author paper <strong>LatentScope</strong> (KDD 2024, CCF A) and internal engineering validation.</p>
           </article>
           <article>
-            <div class="row-heading"><h3>RealAI</h3><span>Aug. 2022 - May 2023</span></div>
-            <p>Algorithm Engineer. Researched robust physical adversarial attacks for face recognition, including adversarial textured 3D meshes and 3D-patch optimization. <strong>Outputs:</strong> co-author papers <strong>AT3D</strong> (CVPR 2023, CCF A, Highlight) and <strong>Face3DAdv</strong> (IJCV 2025, CCF A).</p>
+            <div class="row-heading"><h3>RealAI</h3><span>Aug. 2022 - Jul. 2023</span></div>
+            <p>Algorithm Engineer. Researched physical-world 3D adversarial attacks for face-recognition model security, including adversarial textured meshes and 3D latent-space patch optimization. <strong>Outputs:</strong> co-author papers <strong>AT3D</strong> (CVPR 2023, CCF A, Highlight) and <strong>Face3DAdv</strong> (IJCV 2024, CCF A).</p>
           </article>
         </div>
       </section>
@@ -313,6 +307,7 @@
           <p>Selected awards and recognitions.</p>
         </div>
         <ul class="honors-list">
+          <li><span>Outstanding Undergraduate Graduate, Department of Computer Science and Technology, Tsinghua University</span><time>2023</time></li>
           <li><span>Outstanding Undergraduate Thesis, Tsinghua University</span><time>2023</time></li>
           <li><span>Xiaomi Scholarship</span><time>2022</time></li>
           <li><span>Comprehensive Excellence Scholarship, Tsinghua University</span><time>2021, 2022</time></li>
@@ -323,7 +318,7 @@
 
     <footer class="footer">
       <span>© Longlong Xu</span>
-      <span>Last updated May 2026</span>
+      <span>Last updated Jun. 2026</span>
     </footer>
     <script defer src="assets/analytics.js?v=20260609-1"></script>
   </body>

@@ -36,10 +36,10 @@
           <p class="hero-bio">
             我是<strong class="highlight">清华大学</strong>计算机科学与技术系博士生，所在实验室为
             <a href="https://netman.aiops.org/"><strong>NetMan Lab</strong></a>，导师为
-            <a href="https://netman.aiops.org/~peidan/"><strong>裴丹教授</strong></a>。我的研究位于<strong class="highlight">LLM 后训练</strong>、<strong class="highlight">多模态 LLM 对齐</strong>、<strong class="highlight">推理</strong>，以及其在<strong class="highlight">长序列数值数据</strong>与<strong class="highlight">智能运维</strong>中的应用之间。
+            <a href="https://netman.aiops.org/~peidan/"><strong>裴丹教授</strong></a>。我的研究聚焦于<strong class="highlight">LLM 后训练</strong>、<strong class="highlight">多模态 LLM 对齐与推理</strong>，以及这些技术在<strong class="highlight">长序列数值数据</strong>与<strong class="highlight">智能运维</strong>中的应用。
           </p>
           <p class="hero-bio">
-            我近期关注实际数据场景中的<strong class="highlight">LLM 后训练与推理</strong>：对齐模型行为与<strong>用户意图</strong>，通过多模态感知和工具使用提升长序列数值数据上的<strong>细粒度定位能力</strong>，并构建面向垂直领域大语言模型的<strong>可靠评测方法</strong>。
+            我近期主要面向实际数据场景，构建<strong class="highlight">特定任务推理</strong>的后训练与评测流程：让模型行为更好地对齐<strong>用户意图</strong>，通过主动感知和工具调用提升长序列数值数据上的<strong>细粒度定位能力</strong>，并构建面向垂直领域 LLM 的<strong>可靠评测方法</strong>。
           </p>
           <p class="hero-bio">
             我于 2023 年获得<strong class="highlight">清华大学</strong>计算机科学与技术学士学位，曾在<strong>字节跳动</strong>、<strong>华为</strong>、<strong>中兴</strong>、<strong>eBay</strong> 和<strong>瑞莱智慧</strong>进行算法研究实习，产出<strong class="highlight">两篇 ICML 2026 第一作者论文</strong>和<strong class="highlight">两篇 CCF A 第一作者在投论文</strong>。
@@ -66,28 +66,28 @@
         <div class="section-header research-header">
           <div class="research-copy">
             <h2>研究方向</h2>
-            <p>构建能够理解多模态证据、对齐人类意图并支撑实际决策的大语言模型系统。</p>
+            <p>构建能够理解多模态证据、对齐用户意图，并支撑实际决策的 LLM 系统。</p>
           </div>
         </div>
         <div class="pillars-grid">
           <article class="pillar-card">
             <h3>LLM 后训练与推理</h3>
-            <p>研究大语言模型如何<strong>对齐用户意图</strong>、理解长序列、使用工具，并基于多模态证据进行推理。</p>
+            <p>研究如何通过后训练让 LLM <strong>对齐用户意图</strong>、理解长序列数值数据、调用工具，并基于多模态证据进行推理。</p>
             <a class="pillar-link" href="#pub-post-training">查看相关工作 →</a>
           </article>
           <article class="pillar-card">
             <h3>LLM 评测与基准</h3>
-            <p>构建面向<strong>垂域问答</strong>、文档推理、基准生成和答案完整性的实用评测流程。</p>
+            <p>构建面向<strong>垂直领域问答</strong>、文档推理、基准生成和答案完整性的实用评测流程。</p>
             <a class="pillar-link" href="#pub-llm-evaluation">查看相关工作 →</a>
           </article>
           <article class="pillar-card">
-            <h3>长序列数值建模</h3>
-            <p>研究鲁棒预测、全局上下文建模、推理时增强，以及<strong>高效长上下文访问</strong>。</p>
+            <h3>数值建模与故障诊断</h3>
+            <p>研究长序列数值数据的鲁棒预测、全局上下文建模、推理时增强，以及<strong>运维数据中的故障定位</strong>。</p>
             <a class="pillar-link" href="#pub-long-sequence">查看相关工作 →</a>
           </article>
           <article class="pillar-card">
             <h3>鲁棒 AI 系统</h3>
-            <p>研究物理世界 AI 系统的鲁棒性与安全性，包括<strong>对抗性 3D 感知</strong>与人脸识别可靠性。</p>
+            <p>研究物理场景下 AI 系统的鲁棒性与安全性，包括<strong>对抗性 3D 感知</strong>与人脸识别可靠性。</p>
             <a class="pillar-link" href="#pub-robust-ai">查看相关工作 →</a>
           </article>
         </div>
@@ -133,9 +133,9 @@
             <div class="card-content">
               <div class="meta-row"><span>CCF A 在投</span><span>第一作者</span></div>
               <p class="focus-line"><span>研究方向</span><a href="#research">LLM 后训练与推理</a></p>
-              <h3>面向用户意图对齐的长序列异常检测 LLM 后训练方法</h3>
+              <h3>面向长序列异常检测的用户意图对齐 LLM 后训练方法</h3>
               <p class="authors"><strong class="me">Longlong Xu</strong>, et al.</p>
-              <p class="paper-desc">面向长序列数值数据异常检测，结合<strong>结构化意图解析</strong>、自主记忆检索和 <strong>Agentic RL</strong>，使模型决策与用户意图对齐；已在字节实际开发环境部署。</p>
+              <p class="paper-desc">面向基于长序列数值数据的异常检测任务，提出首个与用户意图对齐的 LLM 解决方案，结合<strong>结构化意图解析</strong>、自主记忆检索和 <strong>Agentic RL</strong>；已在字节实际开发环境部署。</p>
             </div>
           </article>
 
@@ -146,7 +146,7 @@
               <p class="focus-line"><span>研究方向</span><a href="#research">LLM 后训练与推理</a></p>
               <h3>基于主动感知工具调用的细粒度异常定位方法</h3>
               <p class="authors"><strong class="me">Longlong Xu</strong>, et al.</p>
-              <p class="paper-desc">针对长序列异常检测中的细粒度定位误差，结合<strong>多轮工具调用主动感知</strong>、位置敏感数值序列编码器、规则训练数据合成与 <strong>SFT + GRPO</strong> 提升检测准确性。</p>
+              <p class="paper-desc">针对长序列异常检测中的细粒度定位不准问题，提出<strong>多轮工具调用主动感知</strong>方案，并结合位置敏感数值序列编码器、规则训练数据合成与 <strong>SFT + GRPO</strong> 提升检测准确性。</p>
             </div>
           </article>
 
@@ -154,10 +154,10 @@
             <div class="card-thumb"><img src="assets/publications/generated/tamer.png" alt="TameR 论文图。" /></div>
             <div class="card-content">
               <div class="meta-row"><span>ICML 2026 · CCF A</span><span>第一作者</span></div>
-              <p class="focus-line"><span>研究方向</span><a href="#research">长序列数值建模</a></p>
+              <p class="focus-line"><span>研究方向</span><a href="#research">数值建模与故障诊断</a></p>
               <h3>Taming the Recent-Data Bias: Towards Robust Time Series Forecasting with Global Context</h3>
               <p class="authors"><strong class="me">Longlong Xu</strong>, Zeyan Li, Xiao He, Zhaoyang Yu, Changhua Pei, Zhe Xie, Zijun Dou, Tieying Zhang, Dan Pei</p>
-              <p class="paper-desc">指出<strong>最近数据偏置</strong>是时序预测鲁棒性的关键瓶颈，并通过<strong>全局上下文建模</strong>缓解该问题。</p>
+              <p class="paper-desc">首个对近期观测异常鲁棒的数值序列预测模型；理论分析现有模型对最近期观测数据的<strong>捷径依赖</strong>，并通过随机采样的<strong>全局上下文建模</strong>、可学习周期提取和两阶段训练提升鲁棒性。</p>
               <p class="pub-links"><a class="link-paper" href="https://netman.aiops.org/wp-content/uploads/2026/05/ICML26_TameR_20260520.pdf">论文</a><a class="link-code" href="https://github.com/NetManAIOps/TameR">代码</a></p>
             </div>
           </article>
@@ -166,22 +166,22 @@
             <div class="card-thumb"><img src="assets/publications/generated/sprint.png" alt="SPRINT 论文图。" /></div>
             <div class="card-content">
               <div class="meta-row"><span>ICML 2026 · CCF A</span><span>第一作者</span></div>
-              <p class="focus-line"><span>研究方向</span><a href="#research">长序列数值建模</a></p>
+              <p class="focus-line"><span>研究方向</span><a href="#research">数值建模与故障诊断</a></p>
               <h3>See More, Forecast Better and Faster: Enhancing Time Series Foundation Models via Inference-Time Plug-and-Play Downsampling</h3>
               <p class="authors"><strong class="me">Longlong Xu</strong>, Zeyan Li, Xiao He, Zhaoyang Yu, Dazhong Wen, Mingze Sun, Changhua Pei, Dan Pei</p>
-              <p class="paper-desc">提出<strong>无需训练的推理时扩展框架</strong>，提升 <strong>19%</strong> 预测精度，并降低 <strong>6.4x</strong> 峰值显存和 <strong>16.9x</strong> 推理时间。</p>
+              <p class="paper-desc">提出<strong>无需训练的推理时增强框架</strong>，结合降采样与样条插值，使基础模型观察更长上下文，在提升 <strong>19%</strong> 预测精度的同时降低 <strong>6.4x</strong> 峰值显存和 <strong>16.9x</strong> 推理时间。</p>
               <p class="pub-links"><a class="link-paper" href="https://netman.aiops.org/wp-content/uploads/2026/05/ICML26_SPRINT_20260522.pdf">论文</a><a class="link-code" href="https://github.com/NetManAIOps/SPRINT">代码</a></p>
             </div>
           </article>
 
           <article class="paper-card">
-            <div class="card-thumb"><img src="assets/publications/generated/latentscope.png" alt="LatentScope 根因定位框架图。" /></div>
+            <div class="card-thumb"><img src="assets/publications/generated/latentscope.png" alt="MicroScope 根因定位框架图。" /></div>
             <div class="card-content">
-              <div class="meta-row"><span>KDD 2024 · CCF A</span><span>共同作者</span></div>
-              <p class="focus-line"><span>研究方向</span><a href="#research">长序列数值建模</a></p>
+              <div class="meta-row"><span>KDD 2024 · CCF A</span><span>共同作者 · 学生第三作者</span></div>
+              <p class="focus-line"><span>研究方向</span><a href="#research">数值建模与故障诊断</a></p>
               <h3>Microservice Root Cause Analysis With Limited Observability Through Intervention Recognition in the Latent Space</h3>
               <p class="authors">Zhe Xie, Shenglin Zhang, Yitong Geng, Yao Zhang, Minghua Ma, Xiaohui Nie, Zhenhe Yao, <strong class="me">Longlong Xu</strong>, Yongqian Sun, Wentao Li, Dan Pei</p>
-              <p class="paper-desc">提出 <strong>LatentScope</strong>，在受限可观测性下将异构根因候选建模为<strong>隐变量</strong>，用于无监督微服务根因定位，并在 <strong>eBay 生产场景</strong>中验证。</p>
+              <p class="paper-desc">产出 <strong>MicroScope</strong>，面向复杂内部系统，在隐空间中建模系统指标之间的因果关系，并通过干预识别定位根因，算法已工程化应用。</p>
               <p class="pub-links"><a class="link-paper" href="https://netman.aiops.org/wp-content/uploads/2024/07/LatentScope_CameraReady_final.pdf">论文</a><a class="link-code" href="https://github.com/NetManAIOps/LatentScope">代码</a></p>
             </div>
           </article>
@@ -189,11 +189,11 @@
           <article class="paper-card">
             <div class="card-thumb"><img src="assets/publications/generated/foundroot.png" alt="FoundRoot 结构化深度思考框架图。" /></div>
             <div class="card-content">
-              <div class="meta-row"><span>ICSE 2026 · CCF A</span><span>共同作者</span></div>
+              <div class="meta-row"><span>ICSE 2026 · CCF A</span><span>共同作者 · 学生第二作者</span></div>
               <p class="focus-line"><span>研究方向</span><a href="#research">LLM 后训练与推理</a></p>
               <h3>FoundRoot: Towards Foundation Model for Root Cause Analysis via Structured Deep Thinking</h3>
               <p class="authors">Zhe Xie, Zeyan Li, Xiao He, Shenglin Zhang, <strong class="me">Longlong Xu</strong>, Yuzhuo Yang, Tieying Zhang, Jianjun Chen, Rui Shi, Dan Pei</p>
-              <p class="paper-desc">构建面向故障根因定位的<strong>大语言模型基础推理模型</strong>，引入结构化深度思考，并<strong>已在线部署</strong>。</p>
+              <p class="paper-desc">首批基于 LLM 的故障诊断推理基础模型之一，将多模态语义特征、异常波动与传播关系组织为<strong>结构化推理链路</strong>，并通过 <strong>GRPO + RLVR</strong> 提升未见故障类型上的泛化能力与可解释性。</p>
               <p class="pub-links"><a class="link-paper" href="https://netman.aiops.org/wp-content/uploads/2026/01/foundroot_camera_ready.pdf">论文</a></p>
             </div>
           </article>
@@ -201,11 +201,11 @@
           <article class="paper-card">
             <div class="card-thumb"><img src="assets/publications/generated/chatts.png" alt="ChatTS 时间序列多模态大语言模型框架图。" /></div>
             <div class="card-content">
-              <div class="meta-row"><span>VLDB 2025 · CCF A · 100+ 引用</span><span>四作</span></div>
+              <div class="meta-row"><span>VLDB 2025 · CCF A · 100+ 引用</span><span>四作 · 学生第二作者</span></div>
               <p class="focus-line"><span>研究方向</span><a href="#research">LLM 后训练与推理</a></p>
               <h3>ChatTS: Aligning Time Series with LLMs via Synthetic Data for Enhanced Understanding and Reasoning</h3>
               <p class="authors">Zhe Xie, Zeyan Li, Xiao He, <strong class="me">Longlong Xu</strong>, Xidao Wen, Tieying Zhang, Jianjun Chen, Rui Shi, Dan Pei</p>
-              <p class="paper-desc">将<strong>长序列数值数据作为大语言模型的一等模态</strong>，支持数值理解与推理任务；截至 2026.6 获 <strong>450+ GitHub Stars</strong> 与<strong>超 2 万次模型下载</strong>。</p>
+              <p class="paper-desc">首个将<strong>长序列数值数据作为新模态接入 LLM</strong> 的多模态 LLM，通过 SFT 实现多模态对齐，并将新数据模态接入 vLLM 以支持高效推理；截至 2026.6 获 <strong>450+ GitHub Stars</strong>、<strong>100+ 引用</strong>与<strong>超 2 万次模型下载</strong>。</p>
               <p class="pub-links"><a class="link-paper" href="https://netman.aiops.org/wp-content/uploads/2025/05/VLDB_2025_Camera_Ready-1.pdf">论文</a><a class="link-code" href="https://github.com/NetManAIOps/ChatTS">代码</a><a class="link-demo" href="https://huggingface.co/spaces/xiezhe22/ChatTS">Demo</a><a class="link-model" href="https://huggingface.co/bytedance-research/ChatTS-14B">模型</a></p>
             </div>
           </article>
@@ -213,11 +213,11 @@
           <article class="paper-card" id="pub-llm-evaluation">
             <div class="card-thumb"><img src="assets/publications/generated/opseval.png" alt="OpsEval 评测框架图。" /></div>
             <div class="card-content">
-              <div class="meta-row"><span>FSE 2025 · CCF A</span><span>三作</span></div>
+              <div class="meta-row"><span>FSE 2025 · CCF A</span><span>三作 · 学生第二作者</span></div>
               <p class="focus-line"><span>研究方向</span><a href="#research">LLM 评测与基准</a></p>
               <h3>OpsEval: A Comprehensive Benchmark Suite for Evaluating Large Language Models' Capability in IT Operations Domain</h3>
               <p class="authors">Yuhe Liu, Changhua Pei, <strong class="me">Longlong Xu</strong>, Bohan Chen, Mingze Sun, Zhirui Zhang, Yongqian Sun, Shenglin Zhang, Kun Wang, Haiming Zhang, Jianhui Li, Gaogang Xie, Xidao Wen, Xiaohui Nie, Minghua Ma, Dan Pei</p>
-              <p class="paper-desc"><strong>首个面向运维领域的中英双语、多任务大语言模型评测数据集</strong>，覆盖告警、日志、指标、调用链、配置和复杂推理。</p>
+              <p class="paper-desc">面向 AIOps 领域的综合评估基准，包含 <strong>9,000+ 问答</strong>，覆盖 8 个子领域和多种评测范式，并提出与专家评估对齐的问答评分指标 <strong>FAE-Score</strong>。</p>
               <p class="pub-links"><a class="link-paper" href="https://netman.aiops.org/wp-content/uploads/2025/04/OpsEval_FSE_0421.pdf">论文</a><a class="link-leaderboard" href="https://opseval.cstcloud.cn/v2">排行榜</a><a class="link-data" href="https://github.com/NetManAIOps/OpsEval-Datasets">数据集</a></p>
             </div>
           </article>
@@ -225,11 +225,11 @@
           <article class="paper-card">
             <div class="card-thumb"><img src="assets/publications/generated/eagle.png" alt="Eagle 基准问题生成框架图。" /></div>
             <div class="card-content">
-              <div class="meta-row"><span>FSE 2026 · CCF A</span><span>四作</span></div>
+              <div class="meta-row"><span>FSE 2026 · CCF A</span><span>四作 · 学生第三作者</span></div>
               <p class="focus-line"><span>研究方向</span><a href="#research">LLM 评测与基准</a></p>
               <h3>Eagle: Leveraging Operations Documents for Comprehensive Benchmark Question Generation</h3>
               <p class="authors">Yuhe Liu, Changhua Pei, Hang Wang, <strong class="me">Longlong Xu</strong>, Xiaogang Dong, Zhen Feng, Li Zheng, Kehang Ji, Dan Pei</p>
-              <p class="paper-desc">基于<strong>运维文档生成</strong> <strong>4,845 个领域问答样本</strong>，支撑垂域大语言模型评测和内部模型选型。</p>
+              <p class="paper-desc">基于<strong>多层级运维文档</strong>的评测数据集自动构建框架，通过种子数据合成、层次遍历文档召回和文档一致性质量验证，提升评测数据的专业性与证据可追溯性；已在华为实际开发环境部署。</p>
               <p class="pub-links"><a class="link-paper" href="https://netman.aiops.org/wp-content/uploads/2026/04/Eagle__FSE_indu_camera_ready_0326.pdf">论文</a><a class="link-code" href="https://github.com/NickLennonLiu/eagle_code">代码</a><a class="link-data" href="https://github.com/NickLennonLiu/eagle_data">数据集</a></p>
             </div>
           </article>
@@ -237,7 +237,7 @@
           <article class="paper-card">
             <div class="card-thumb"><img src="assets/publications/generated/techsupporteval.png" alt="TechSupportEval 对比实验图。" /></div>
             <div class="card-content">
-              <div class="meta-row"><span>IJCNN 2025 · THU B, CCF C</span><span>四作</span></div>
+              <div class="meta-row"><span>IJCNN 2025 · THU B, CCF C</span><span>四作 · 学生第三作者</span></div>
               <p class="focus-line"><span>研究方向</span><a href="#research">LLM 评测与基准</a></p>
               <h3>TechSupportEval: An Automated Evaluation Framework for Technical Support Question Answering</h3>
               <p class="authors">Bohan Chen, Yongqian Sun, Yuhe Liu, <strong class="me">Longlong Xu</strong>, Zhe Xie, Changhua Pei, Jing Han, Fan Ni, Xuhui Cai, Ce Yang, Dan Pei</p>
@@ -253,19 +253,19 @@
               <p class="focus-line"><span>研究方向</span><a href="#research">鲁棒 AI 系统</a></p>
               <h3>Towards Effective Adversarial Textured 3D Meshes on Physical Face Recognition</h3>
               <p class="authors">Xiao Yang, Chang Liu, <strong class="me">Longlong Xu</strong>, Yikai Wang, Yinpeng Dong, Ning Chen, Hang Su, Jun Zhu</p>
-              <p class="paper-desc">设计<strong>对抗性纹理 3D 网格</strong>，用于评估并提升<strong>物理世界人脸识别系统</strong>的鲁棒性。</p>
+              <p class="paper-desc">设计基于对抗攻击的<strong>纹理 3D 网格</strong>，攻击多种架构的开源人脸识别模型，并成功绕过手机锁屏、智能门锁等真实人脸识别防御系统。</p>
               <p class="pub-links"><a class="link-paper" href="https://arxiv.org/pdf/2303.15818">论文</a><a class="link-code" href="https://github.com/thu-ml/AT3D">代码</a></p>
             </div>
           </article>
 
           <article class="paper-card">
-            <div class="card-thumb"><img src="assets/publications/generated/face3dadv.png" alt="执行对抗攻击模拟框架图。" /></div>
+            <div class="card-thumb"><img src="assets/publications/generated/face3dadv.png" alt="Face3DAdv 物理攻击框架图。" /></div>
             <div class="card-content">
               <div class="meta-row"><span>IJCV 2024 · CCF A</span><span>二作</span></div>
               <p class="focus-line"><span>研究方向</span><a href="#research">鲁棒 AI 系统</a></p>
               <h3>Face3DAdv: Exploiting Robust Adversarial 3D Patches on Physical Face Recognition</h3>
               <p class="authors">Xiao Yang, <strong class="me">Longlong Xu</strong>, Tianyu Pang, Yinpeng Dong, Yikai Wang, Hang Su, Jun Zhu</p>
-              <p class="paper-desc">通过 <strong>3D StyleGAN 隐空间</strong>中的补丁优化，提升<strong>物理人脸对抗攻击</strong>的鲁棒性。</p>
+              <p class="paper-desc">通过在 <strong>3D StyleGAN 隐空间</strong>中优化人脸补丁，实现鲁棒的物理人脸对抗攻击。</p>
               <p class="pub-links"><a class="link-paper" href="https://link.springer.com/article/10.1007/s11263-024-02177-6">论文</a></p>
             </div>
           </article>
@@ -275,12 +275,12 @@
       <section id="experience" class="section">
         <div class="section-header">
           <h2>经历</h2>
-          <p>围绕大语言模型、智能运维、时间序列建模和故障诊断的工业研究经历。</p>
+          <p>围绕 LLM 后训练、多模态推理、智能运维、数值序列预测和故障诊断的工业研究经历。</p>
         </div>
         <div class="experience-list">
           <article>
             <div class="row-heading"><h3>字节跳动</h3><span>2025.1 - 2026.6</span></div>
-            <p>算法工程师。围绕<strong>异常检测任务的 LLM 后训练</strong>、长序列数值数据多模态 LLM 对齐与推理、基础模型增强开展研究。<strong>产出：</strong>第一作者论文 <strong>TameR</strong> 与 <strong>SPRINT</strong>（ICML 2026，CCF A）；两篇 CCF A 第一作者在投论文；合作论文 <strong>ChatTS</strong>（VLDB 2025）与 <strong>FoundRoot</strong>（ICSE 2026）。相关模型已在公司内部业务或线上生产环境部署验证。</p>
+            <p>算法工程师。主要开展三类工作：在<strong>异常检测任务的 LLM 后训练</strong>方向，通过 Agentic RL 将用户意图与多模态证据转化为更可靠的运维决策；在长序列数值数据多模态 LLM 对齐与推理方向，参与设计并优化原生支持特定模态数据的多模态 LLM；在数值序列预测与基础模型增强方向，解决近期观测捷径依赖与长上下文受限问题。<strong>产出：</strong>第一作者论文 <strong>TameR</strong> 与 <strong>SPRINT</strong>（ICML 2026，CCF A）、两篇 CCF A 第一作者在投论文，以及合作论文 <strong>ChatTS</strong>（VLDB 2025）与 <strong>FoundRoot</strong>（ICSE 2026）。</p>
           </article>
           <article>
             <div class="row-heading"><h3>华为</h3><span>2024.6 - 2024.12</span></div>
@@ -288,11 +288,11 @@
           </article>
           <article>
             <div class="row-heading"><h3>中兴</h3><span>2024.1 - 2024.5</span></div>
-            <p>算法工程师。收集并清洗网络领域语料，生成问答数据并微调通用 LLM，参与构建面向网络运维领域的 LLM 评测基准。<strong>产出：</strong>合作论文 <strong>OpsEval</strong>（FSE 2025）与 <strong>TechSupportEval</strong>（IJCNN 2025）；发布的在线排行榜截至 2026.6 获<strong>超 200 万访问量</strong>。</p>
+            <p>算法工程师。收集并清洗网络领域语料，生成问答数据并微调通用 LLM，提升领域知识问答与检索增强问答效果；同时参与构建面向网络运维领域的 LLM 评测基准。<strong>产出：</strong>合作论文 <strong>OpsEval</strong>（FSE 2025）与 <strong>TechSupportEval</strong>（IJCNN 2025）；发布的在线排行榜截至 2026.6 获<strong>超 200 万访问量</strong>。</p>
           </article>
           <article>
             <div class="row-heading"><h3>eBay</h3><span>2023.8 - 2023.12</span></div>
-            <p>算法工程师。在隐空间中建模复杂系统指标间因果关系，并通过干预识别进行根因定位。<strong>产出：</strong>共同作者论文 <strong>LatentScope</strong>（KDD 2024，CCF A）与内部工程验证。</p>
+            <p>算法工程师。面向复杂内部系统研发根因定位算法，在隐空间中建模系统指标之间的因果关系，并通过干预识别定位根因，算法已被工程化应用。<strong>产出：</strong>合作论文 <strong>MicroScope</strong>（KDD 2024，CCF A）。</p>
           </article>
           <article>
             <div class="row-heading"><h3>RealAI（瑞莱智慧）</h3><span>2022.8 - 2023.7</span></div>

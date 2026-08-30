@@ -295,6 +295,20 @@ h3 {
   white-space: nowrap;
 }
 
+.pillar-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 3px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 999px;
+  background: #f6f5f2;
+  color: #6a6f77;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
 .section-action:hover,
 .pillar-link:hover {
   color: var(--accent-dark);

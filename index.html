@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,600;6..72,700;6..72,800&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260830-1" />
+    <link rel="stylesheet" href="styles.css?v=20260830-2" />
   </head>
   <body>
     <header class="site-header">
@@ -39,20 +39,18 @@
             <a href="https://netman.aiops.org/"><strong>NetMan Lab</strong></a>. My research focuses on <strong class="highlight">LLM post-training</strong>, <strong class="highlight">Agentic RL</strong>, <strong class="highlight">multimodal LLM alignment and reasoning</strong>, and their applications to <strong class="highlight">AIOps</strong>.
           </p>
           <p class="hero-bio">
-            My recent work studies <strong class="highlight">off-policy optimization for LLM and agent training</strong>, including selective correction for LLM RL and inherited policy drift in long-horizon agents. I also build multimodal agents that align with <strong>user intent</strong>, retrieve memory, use tools, and actively acquire fine-grained evidence from time-series data.
+            My recent work spans <strong class="highlight">reliable LLM and agent post-training</strong>, including off-policy optimization for LLM and long-horizon agent training, user-intent-aligned multi-step decision making, and <strong>VLM-based active perception</strong> for fine-grained time-series anomaly localization.
           </p>
           <p class="hero-bio">
-            I received my B.E. degree in Computer Science and Technology from <strong class="highlight">Tsinghua University</strong> in 2023. I have held algorithm research internships at <strong>ByteDance</strong>, <strong>Huawei</strong>, <strong>ZTE</strong>, <strong>eBay</strong>, and <strong>RealAI</strong>, producing <strong class="highlight">two first-author ICML 2026 papers</strong> and <strong class="highlight">two first-author CCF-A submissions under review</strong>.
+            I received my B.E. degree in Computer Science and Technology from <strong class="highlight">Tsinghua University</strong> in 2023. I have held algorithm research internships at <strong>ByteDance</strong>, <strong>Huawei</strong>, <strong>ZTE</strong>, <strong>eBay</strong>, and <strong>RealAI</strong>, producing <strong class="highlight">two first-author ICML 2026 papers</strong> and <strong class="highlight">two first-author studies currently under review</strong>.
           </p>
           <div class="hero-metrics" aria-label="Research highlights">
             <span><strong>2</strong> first-author ICML papers</span>
-            <span><strong>3</strong> first-author LLM / Agent projects</span>
+            <span><strong>LLM</strong> post-training &amp; Agentic RL</span>
             <span><strong>120+</strong> ChatTS citations</span>
           </div>
           <div class="hero-links" aria-label="Profile links">
             <a class="button primary" href="#publications">View Publications</a>
-            <a class="button" href="assets/XuLonglong-en_US.pdf">English CV</a>
-            <a class="button" href="assets/Xulonglong_zh_CN.pdf">Chinese CV</a>
             <a class="button" href="https://scholar.google.com/citations?user=f_3R4qEAAAAJ&amp;hl=en">Google Scholar</a>
             <a class="button" href="mailto:xull23@mails.tsinghua.edu.cn">Contact Me</a>
           </div>
@@ -66,19 +64,19 @@
         <div class="section-header research-header">
           <div class="research-copy">
             <h2>Research Focus</h2>
-            <p>Building trainable agents that reason over multimodal evidence, stay reliable under policy drift, and support practical decision making.</p>
+            <p>Building reliable LLM and agent systems that learn from multimodal evidence and support practical decision making.</p>
           </div>
         </div>
         <div class="pillars-grid">
           <article class="pillar-card">
-            <h3>Agentic RL &amp; Off-Policy Optimization</h3>
-            <p>Reliable updates for LLM RL and long-horizon agents under <strong>policy lag, rollout reuse, and inherited trajectory drift</strong>.</p>
-            <a class="pillar-link" href="#pub-agentic">View Work →</a>
+            <h3>Agentic RL &amp; Reliable Post-Training</h3>
+            <p>Reliable policy updates for LLMs and long-horizon agents, together with <strong>intent-aligned multi-step decision making</strong>.</p>
+            <a class="pillar-link" href="#pub-post-training">View Agent Work →</a>
           </article>
           <article class="pillar-card">
-            <h3>Multimodal LLM Post-Training</h3>
-            <p>Aligning models with <strong>user intent</strong> and training agents to retrieve memory, use tools, and actively inspect time-series evidence.</p>
-            <a class="pillar-link" href="#pub-post-training">View Work →</a>
+            <h3>Multimodal LLM Alignment &amp; Reasoning</h3>
+            <p>Aligning time-series data with LLMs and training VLM agents to <strong>actively inspect fine-grained evidence</strong>.</p>
+            <a class="pillar-link" href="#pub-active-perception">View Work →</a>
           </article>
           <article class="pillar-card">
             <h3>LLM Evaluation &amp; AIOps</h3>
@@ -99,10 +97,6 @@
           <p>Recent research updates and publications.</p>
         </div>
         <div class="news-box">
-          <div class="news-item">
-            <span class="news-date">Aug. 2026</span>
-            <span class="news-content"><strong>IntentAD</strong> and <strong>G2AD</strong> were submitted to ICSE 2027 and AAAI 2027; I am also developing <strong>IPD</strong> for off-policy optimization in long-horizon Agentic RL.</span>
-          </div>
           <div class="news-item">
             <span class="news-date">May 2026</span>
             <span class="news-content"><strong>TameR</strong> and <strong>SPRINT</strong> were accepted to ICML 2026.</span>
@@ -132,33 +126,22 @@
         </div>
 
         <div class="paper-list">
-          <article class="paper-card" id="pub-agentic">
-            <div class="card-thumb tone-slate"><span>Agentic RL<br />Off-Policy</span></div>
-            <div class="card-content">
-              <div class="meta-row"><span>Ongoing · ICLR 2027 planned</span><span>First author (IPD) · Co-author (SIS)</span></div>
-              <p class="focus-line"><span>Research Focus</span><a href="#research">Agentic RL &amp; Off-Policy Optimization</a></p>
-              <h3>Off-Policy Optimization for LLM Post-Training and Long-Horizon Agents</h3>
-              <p class="authors"><strong class="me">Longlong Xu</strong>, collaborators</p>
-              <p class="paper-desc"><strong>SIS</strong> uses token-level rejection sampling for selective off-policy correction in LLM RL. <strong>Inherited Policy Drift (IPD)</strong> studies how later agent updates inherit mismatch from prior decisions and reweights policy loss using both current-token and accumulated action-path drift.</p>
-            </div>
-          </article>
-
           <article class="paper-card" id="pub-post-training">
             <div class="card-thumb tone-blue"><span>Intent-Aligned<br />Agent</span></div>
             <div class="card-content">
-              <div class="meta-row"><span>ICSE 2027 · CCF A · under review</span><span>First author</span></div>
-              <p class="focus-line"><span>Research Focus</span><a href="#research">Multimodal LLM Post-Training</a></p>
+              <div class="meta-row"><span>Under review</span><span>First author</span></div>
+              <p class="focus-line"><span>Research Focus</span><a href="#research">Agentic RL &amp; Reliable Post-Training</a></p>
               <h3>IntentAD: User-Intent-Aligned KPI Anomaly Detection Agent</h3>
               <p class="authors"><strong class="me">Longlong Xu</strong>, et al.</p>
               <p class="paper-desc">Builds a multi-step agentic decision process across <strong>intent parsing, autonomous memory retrieval, and tool execution</strong>, then injects intent-following and decision capabilities through <strong>Agentic RL</strong>; deployed in ByteDance's development environment.</p>
             </div>
           </article>
 
-          <article class="paper-card">
+          <article class="paper-card" id="pub-active-perception">
             <div class="card-thumb tone-purple"><span>Active<br />Perception</span></div>
             <div class="card-content">
-              <div class="meta-row"><span>AAAI 2027 · CCF A · under review</span><span>First author</span></div>
-              <p class="focus-line"><span>Research Focus</span><a href="#research">Multimodal LLM Post-Training</a></p>
+              <div class="meta-row"><span>Under review</span><span>First author</span></div>
+              <p class="focus-line"><span>Research Focus</span><a href="#research">Multimodal LLM Alignment &amp; Reasoning</a></p>
               <h3>G2AD: VLM-Based Active Perception for Time-Series Anomaly Detection</h3>
               <p class="authors"><strong class="me">Longlong Xu</strong>, et al.</p>
               <p class="paper-desc">Builds a multi-turn inspection agent on <strong>Qwen3.5-9B</strong> that screens candidate regions globally, gathers high-resolution local evidence in parallel, refines boundaries across turns, and stops adaptively; trained through controllable data synthesis and two-stage <strong>SFT + GRPO</strong>.</p>
@@ -205,7 +188,7 @@
             <div class="card-thumb"><img src="assets/publications/generated/foundroot.png" alt="FoundRoot structured deep thinking figure." /></div>
             <div class="card-content">
               <div class="meta-row"><span>ICSE 2026 · CCF A</span><span>Co-author · 2nd student author</span></div>
-              <p class="focus-line"><span>Research Focus</span><a href="#research">Multimodal LLM Post-Training</a></p>
+              <p class="focus-line"><span>Research Focus</span><a href="#research">Multimodal LLM Alignment &amp; Reasoning</a></p>
               <h3>FoundRoot: Towards Foundation Model for Root Cause Analysis via Structured Deep Thinking</h3>
               <p class="authors">Zhe Xie, Zeyan Li, Xiao He, Shenglin Zhang, <strong class="me">Longlong Xu</strong>, Yuzhuo Yang, Tieying Zhang, Jianjun Chen, Rui Shi, Dan Pei</p>
               <p class="paper-desc">One of the first <strong>LLM-based foundation models for fault-diagnosis reasoning</strong>, organizing multimodal semantic features, anomaly fluctuations, and propagation relationships into structured reasoning chains and improving generalization with <strong>GRPO + RLVR</strong>.</p>
@@ -217,7 +200,7 @@
             <div class="card-thumb"><img src="assets/publications/generated/chatts.png" alt="ChatTS time-series multimodal LLM figure." /></div>
             <div class="card-content">
               <div class="meta-row"><span>VLDB 2025 · CCF A · 120+ citations</span><span>4th author · 2nd student author</span></div>
-              <p class="focus-line"><span>Research Focus</span><a href="#research">Multimodal LLM Post-Training</a></p>
+              <p class="focus-line"><span>Research Focus</span><a href="#research">Multimodal LLM Alignment &amp; Reasoning</a></p>
               <h3>ChatTS: Aligning Time Series with LLMs via Synthetic Data for Enhanced Understanding and Reasoning</h3>
               <p class="authors">Zhe Xie, Zeyan Li, Xiao He, <strong class="me">Longlong Xu</strong>, Xidao Wen, Tieying Zhang, Jianjun Chen, Rui Shi, Dan Pei</p>
               <p class="paper-desc">The first multimodal LLM that incorporates <strong>time-series data as a native new modality</strong>; enabled multimodal alignment through SFT, integrated the modality into vLLM for efficient inference, and reached <strong>470+ GitHub stars</strong>, <strong>120+ citations</strong>, and <strong>20K+ model downloads</strong> as of Aug. 2026.</p>
@@ -290,29 +273,44 @@
       <section id="experience" class="section">
         <div class="section-header">
           <h2>Experience</h2>
-            <p>Industry research experience across LLM post-training, multimodal reasoning, AIOps, numerical forecasting, and fault diagnosis.</p>
+          <p>Industry research experience across LLM post-training, multimodal reasoning, AIOps, numerical forecasting, and fault diagnosis.</p>
         </div>
-        <div class="experience-list">
-          <article>
-            <div class="row-heading"><h3>ByteDance</h3><span>Jan. 2025 - Aug. 2026</span></div>
-            <p>Research Intern. Built multimodal LLM post-training and evaluation pipelines for time-series reasoning, spanning native-modality alignment, controllable trajectory synthesis, Agentic RL, multi-turn tool use, RLVR, and efficient serving. <strong>Outputs:</strong> first-author <strong>TameR</strong> and <strong>SPRINT</strong> (ICML 2026), first-author submissions <strong>IntentAD</strong> and <strong>G2AD</strong>, and co-authored <strong>ChatTS</strong> (VLDB 2025) and <strong>FoundRoot</strong> (ICSE 2026).</p>
-          </article>
-          <article>
-            <div class="row-heading"><h3>Huawei</h3><span>Sep. 2024 - Dec. 2025</span></div>
-            <p>Research Intern. Studied multisource spatio-temporal foundation models for optical transport networks and automatic evaluation-data generation from hierarchical documents; contributed to <strong>Eagle</strong> (FSE 2026, CCF A) and supported engineering deployment.</p>
-          </article>
-          <article>
-            <div class="row-heading"><h3>ZTE</h3><span>Jan. 2024 - Aug. 2024</span></div>
-            <p>Research Intern. Built an end-to-end AIOps workflow for domain corpus and QA synthesis, LLM post-training, and automatic evaluation, improving domain QA accuracy by more than <strong>80%</strong> over the chat base model. Co-authored <strong>OpsEval</strong> (FSE 2025) and <strong>TechSupportEval</strong> (IJCNN 2025); the public leaderboard has exceeded <strong>2 million visits</strong>.</p>
-          </article>
-          <article>
-            <div class="row-heading"><h3>eBay</h3><span>Aug. 2023 - Dec. 2023</span></div>
-            <p>Algorithm Engineer. Developed root-cause localization for complex internal systems by modeling causal relationships among metrics in latent space and identifying root causes through intervention. The algorithm was engineered for practical use and produced one co-authored paper: <strong>MicroScope</strong> (KDD 2024, CCF A).</p>
-          </article>
-          <article>
-            <div class="row-heading"><h3>RealAI</h3><span>Aug. 2022 - Jul. 2023</span></div>
-            <p>Algorithm Engineer. Researched physical-world 3D adversarial attacks for face-recognition model security, including adversarial textured meshes and 3D latent-space patch optimization. <strong>Outputs:</strong> co-author papers <strong>AT3D</strong> (CVPR 2023, CCF A, Highlight) and <strong>Face3DAdv</strong> (IJCV 2024, CCF A).</p>
-          </article>
+        <div class="experience-groups">
+          <section class="experience-group" aria-labelledby="experience-llm">
+            <h3 class="experience-group-title" id="experience-llm"><span>01</span> LLM-Related Internships</h3>
+            <div class="experience-list">
+              <article>
+                <div class="row-heading"><h3>ByteDance</h3><span>Sep. 2025 - Aug. 2026</span></div>
+                <p>Research Intern. Built multimodal LLM post-training and evaluation pipelines for time-series reasoning, covering controllable data synthesis, multi-turn tool-use trajectories, SFT, Agentic RL, trajectory evaluation, RLVR, and efficient serving. Extended <strong>LLaMA-Factory</strong>, <strong>VeRL</strong>, <strong>TRL GRPOTrainer</strong>, and <strong>vLLM</strong> for native time-series inputs; work spans <strong>ChatTS</strong>, <strong>FoundRoot</strong>, <strong>IntentAD</strong>, and <strong>G2AD</strong>.</p>
+              </article>
+              <article>
+                <div class="row-heading"><h3>ZTE</h3><span>Jan. 2024 - Aug. 2024</span></div>
+                <p>Research Intern. Built an end-to-end AIOps workflow for domain corpus and QA synthesis, LLM post-training, and automatic evaluation, improving domain QA accuracy by more than <strong>80%</strong> over the chat base model. Co-authored <strong>OpsEval</strong> (FSE 2025) and <strong>TechSupportEval</strong> (IJCNN 2025); the public leaderboard has exceeded <strong>2 million visits</strong>.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="experience-group" aria-labelledby="experience-other">
+            <h3 class="experience-group-title" id="experience-other"><span>02</span> Other Internships</h3>
+            <div class="experience-list">
+              <article>
+                <div class="row-heading"><h3>ByteDance</h3><span>Jan. 2025 - Aug. 2025</span></div>
+                <p>Research Intern. Studied robustness and inference efficiency for time-series foundation models, addressing recent-observation shortcuts and long-context limitations. Produced two first-author papers, <strong>TameR</strong> and <strong>SPRINT</strong> (ICML 2026).</p>
+              </article>
+              <article>
+                <div class="row-heading"><h3>Huawei</h3><span>Sep. 2024 - Dec. 2025</span></div>
+                <p>Research Intern. Studied multisource spatio-temporal foundation models for optical transport networks and automatic evaluation-data generation from hierarchical documents; contributed to <strong>Eagle</strong> (FSE 2026, CCF A) and supported engineering deployment.</p>
+              </article>
+              <article>
+                <div class="row-heading"><h3>eBay</h3><span>Aug. 2023 - Dec. 2023</span></div>
+                <p>Research Intern. Developed root-cause localization for complex internal systems by modeling causal relationships among metrics in latent space and identifying root causes through intervention. The algorithm was engineered for practical use and produced <strong>MicroScope</strong> (KDD 2024, CCF A).</p>
+              </article>
+              <article>
+                <div class="row-heading"><h3>RealAI</h3><span>Aug. 2022 - Jul. 2023</span></div>
+                <p>Research Intern. Studied physical-world 3D adversarial attacks for face-recognition model security, including adversarial textured meshes and 3D latent-space patch optimization. Co-authored <strong>AT3D</strong> (CVPR 2023, CCF A, Highlight) and <strong>Face3DAdv</strong> (IJCV 2024, CCF A).</p>
+              </article>
+            </div>
+          </section>
         </div>
       </section>
 

@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,600;6..72,700;6..72,800&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260830-1" />
+    <link rel="stylesheet" href="styles.css?v=20260830-2" />
   </head>
   <body>
     <header class="site-header">
@@ -39,20 +39,18 @@
             <a href="https://netman.aiops.org/~peidan/"><strong>裴丹教授</strong></a>。我的研究聚焦于<strong class="highlight">LLM 后训练</strong>、<strong class="highlight">Agentic RL</strong>、<strong class="highlight">多模态 LLM 对齐与推理</strong>，以及这些技术在<strong class="highlight">智能运维</strong>中的应用。
           </p>
           <p class="hero-bio">
-            我近期主要研究<strong class="highlight">LLM 与长程 Agent 的 Off-Policy 优化</strong>，包括面向 LLM 强化学习的选择性修正，以及长程交互中由历史决策累积的策略偏移；同时构建能够<strong>理解用户意图</strong>、自主检索记忆、调用工具并主动获取时序证据的多模态 Agent。
+            我近期围绕<strong class="highlight">可靠的 LLM 与 Agent 后训练</strong>开展研究，涵盖 LLM 与长程 Agent 的 Off-Policy 优化、面向用户意图的多步决策，以及基于 <strong>VLM 主动感知</strong>的细粒度时间序列异常定位。
           </p>
           <p class="hero-bio">
-            我于 2023 年获得<strong class="highlight">清华大学</strong>计算机科学与技术学士学位，曾在<strong>字节跳动</strong>、<strong>华为</strong>、<strong>中兴</strong>、<strong>eBay</strong> 和<strong>瑞莱智慧</strong>进行算法研究实习，产出<strong class="highlight">两篇 ICML 2026 第一作者论文</strong>和<strong class="highlight">两篇 CCF A 第一作者在投论文</strong>。
+            我于 2023 年获得<strong class="highlight">清华大学</strong>计算机科学与技术学士学位，曾在<strong>字节跳动</strong>、<strong>华为</strong>、<strong>中兴</strong>、<strong>eBay</strong> 和<strong>瑞莱智慧</strong>进行算法研究实习，产出<strong class="highlight">两篇 ICML 2026 第一作者论文</strong>，另有<strong class="highlight">两项第一作者研究工作目前在审</strong>。
           </p>
           <div class="hero-metrics" aria-label="研究亮点">
             <span><strong>2</strong> 篇一作 ICML 论文</span>
-            <span><strong>3</strong> 项一作 LLM / Agent 工作</span>
+            <span><strong>LLM</strong> 后训练与 Agentic RL</span>
             <span><strong>120+</strong> ChatTS 引用</span>
           </div>
           <div class="hero-links" aria-label="个人链接">
             <a class="button primary" href="#publications">查看论文</a>
-            <a class="button" href="assets/Xulonglong_zh_CN.pdf">中文简历</a>
-            <a class="button" href="assets/XuLonglong-en_US.pdf">英文简历</a>
             <a class="button" href="https://scholar.google.com/citations?user=f_3R4qEAAAAJ&amp;hl=en">Google Scholar</a>
             <a class="button" href="mailto:xull23@mails.tsinghua.edu.cn">联系我</a>
           </div>
@@ -66,19 +64,19 @@
         <div class="section-header research-header">
           <div class="research-copy">
             <h2>研究方向</h2>
-            <p>构建能够理解多模态证据、抵抗策略漂移，并在真实任务中可靠决策的 LLM 与 Agent 系统。</p>
+            <p>构建能够从多模态证据中学习，并在真实任务中可靠决策的 LLM 与 Agent 系统。</p>
           </div>
         </div>
         <div class="pillars-grid">
           <article class="pillar-card">
-            <h3>Agentic RL 与 Off-Policy 优化</h3>
-            <p>研究 policy lag、rollout 复用与历史轨迹偏移下，LLM 强化学习和<strong>长程 Agent 更新的可靠性</strong>。</p>
-            <a class="pillar-link" href="#pub-agentic">查看相关工作 →</a>
+            <h3>Agentic RL 与可靠后训练</h3>
+            <p>研究 LLM 与长程 Agent 的可靠策略更新，以及<strong>面向用户意图的多步决策</strong>。</p>
+            <a class="pillar-link" href="#pub-post-training">查看 Agent 工作 →</a>
           </article>
           <article class="pillar-card">
-            <h3>多模态 LLM 后训练</h3>
-            <p>对齐<strong>用户意图</strong>，并训练 Agent 自主检索记忆、调用工具和主动检查时间序列证据。</p>
-            <a class="pillar-link" href="#pub-post-training">查看相关工作 →</a>
+            <h3>多模态 LLM 对齐与推理</h3>
+            <p>将时间序列数据与 LLM 对齐，并训练 VLM Agent <strong>主动获取细粒度证据</strong>。</p>
+            <a class="pillar-link" href="#pub-active-perception">查看相关工作 →</a>
           </article>
           <article class="pillar-card">
             <h3>LLM 评测与 AIOps</h3>
@@ -99,10 +97,6 @@
           <p>近期研究进展与论文录用。</p>
         </div>
         <div class="news-box">
-          <div class="news-item">
-            <span class="news-date">2026.8</span>
-            <span class="news-content"><strong>IntentAD</strong> 与 <strong>G2AD</strong> 分别投稿 ICSE 2027 和 AAAI 2027；同时开展面向长程 Agentic RL Off-Policy 优化的 <strong>IPD</strong> 研究。</span>
-          </div>
           <div class="news-item">
             <span class="news-date">2026.5</span>
             <span class="news-content"><strong>TameR</strong> 和 <strong>SPRINT</strong> 被 ICML 2026 接收。</span>
@@ -132,33 +126,22 @@
         </div>
 
         <div class="paper-list">
-          <article class="paper-card" id="pub-agentic">
-            <div class="card-thumb tone-slate"><span>Agentic RL<br />Off-Policy</span></div>
-            <div class="card-content">
-              <div class="meta-row"><span>进行中 · 拟投稿 ICLR 2027</span><span>IPD 第一作者 · SIS 合作作者</span></div>
-              <p class="focus-line"><span>研究方向</span><a href="#research">Agentic RL 与 Off-Policy 优化</a></p>
-              <h3>面向 LLM 后训练与长程 Agent 的 Off-Policy 优化</h3>
-              <p class="authors"><strong class="me">徐龙龙</strong>，合作作者</p>
-              <p class="paper-desc"><strong>SIS</strong> 通过 token-level 拒绝采样，对 LLM 强化学习中的 off-policy token 进行选择性修正；<strong>Inherited Policy Drift（IPD）</strong>研究后续 Agent 更新如何继承历史决策累积的策略偏移，并综合当前 token 与历史 action 的偏移连续调整策略损失权重。</p>
-            </div>
-          </article>
-
           <article class="paper-card" id="pub-post-training">
             <div class="card-thumb tone-blue"><span>意图对齐<br />Agent</span></div>
             <div class="card-content">
-              <div class="meta-row"><span>ICSE 2027 · CCF A · 在投</span><span>第一作者</span></div>
-              <p class="focus-line"><span>研究方向</span><a href="#research">多模态 LLM 后训练</a></p>
+              <div class="meta-row"><span>在审</span><span>第一作者</span></div>
+              <p class="focus-line"><span>研究方向</span><a href="#research">Agentic RL 与可靠后训练</a></p>
               <h3>IntentAD：业务意图对齐的 KPI 异常检测 Agent</h3>
               <p class="authors"><strong class="me">Longlong Xu</strong>, et al.</p>
               <p class="paper-desc">构建由<strong>意图解析、自主记忆检索和工具执行</strong>组成的多步 Agent 决策链，并通过 <strong>Agentic RL</strong> 注入意图遵循与多步决策能力；已在字节实际开发环境部署。</p>
             </div>
           </article>
 
-          <article class="paper-card">
+          <article class="paper-card" id="pub-active-perception">
             <div class="card-thumb tone-purple"><span>主动<br />感知</span></div>
             <div class="card-content">
-              <div class="meta-row"><span>AAAI 2027 · CCF A · 在投</span><span>第一作者</span></div>
-              <p class="focus-line"><span>研究方向</span><a href="#research">多模态 LLM 后训练</a></p>
+              <div class="meta-row"><span>在审</span><span>第一作者</span></div>
+              <p class="focus-line"><span>研究方向</span><a href="#research">多模态 LLM 对齐与推理</a></p>
               <h3>G2AD：基于 VLM 主动感知的时间序列异常检测</h3>
               <p class="authors"><strong class="me">Longlong Xu</strong>, et al.</p>
               <p class="paper-desc">以 <strong>Qwen3.5-9B</strong> 为底座构建多轮检查 Agent：先全局筛选候选区域，再并行获取高分辨率局部证据，跨轮精化异常边界并自主停止；通过可控数据合成与两阶段 <strong>SFT + GRPO</strong> 注入主动感知能力。</p>
@@ -205,7 +188,7 @@
             <div class="card-thumb"><img src="assets/publications/generated/foundroot.png" alt="FoundRoot 结构化深度思考框架图。" /></div>
             <div class="card-content">
               <div class="meta-row"><span>ICSE 2026 · CCF A</span><span>共同作者 · 学生第二作者</span></div>
-              <p class="focus-line"><span>研究方向</span><a href="#research">多模态 LLM 后训练</a></p>
+              <p class="focus-line"><span>研究方向</span><a href="#research">多模态 LLM 对齐与推理</a></p>
               <h3>FoundRoot: Towards Foundation Model for Root Cause Analysis via Structured Deep Thinking</h3>
               <p class="authors">Zhe Xie, Zeyan Li, Xiao He, Shenglin Zhang, <strong class="me">Longlong Xu</strong>, Yuzhuo Yang, Tieying Zhang, Jianjun Chen, Rui Shi, Dan Pei</p>
               <p class="paper-desc">首批基于 LLM 的故障诊断推理基础模型之一，将多模态语义特征、异常波动与传播关系组织为<strong>结构化推理链路</strong>，并通过 <strong>GRPO + RLVR</strong> 提升未见故障类型上的泛化能力与可解释性。</p>
@@ -217,7 +200,7 @@
             <div class="card-thumb"><img src="assets/publications/generated/chatts.png" alt="ChatTS 时间序列多模态大语言模型框架图。" /></div>
             <div class="card-content">
               <div class="meta-row"><span>VLDB 2025 · CCF A · 120+ 引用</span><span>四作 · 学生第二作者</span></div>
-              <p class="focus-line"><span>研究方向</span><a href="#research">多模态 LLM 后训练</a></p>
+              <p class="focus-line"><span>研究方向</span><a href="#research">多模态 LLM 对齐与推理</a></p>
               <h3>ChatTS: Aligning Time Series with LLMs via Synthetic Data for Enhanced Understanding and Reasoning</h3>
               <p class="authors">Zhe Xie, Zeyan Li, Xiao He, <strong class="me">Longlong Xu</strong>, Xidao Wen, Tieying Zhang, Jianjun Chen, Rui Shi, Dan Pei</p>
               <p class="paper-desc">首个将<strong>时间序列数据作为原生新模态接入 LLM</strong> 的多模态 LLM，通过 SFT 实现跨模态对齐，并将新模态接入 vLLM 支持高效推理；截至 2026.8 获 <strong>470+ GitHub Stars</strong>、<strong>120+ 引用</strong>与<strong>超 2 万次模型下载</strong>。</p>
@@ -292,27 +275,42 @@
           <h2>经历</h2>
           <p>围绕 LLM 后训练、多模态推理、智能运维、数值序列预测和故障诊断的工业研究经历。</p>
         </div>
-        <div class="experience-list">
-          <article>
-            <div class="row-heading"><h3>字节跳动</h3><span>2025.1 - 2026.8</span></div>
-            <p>算法实习生。搭建面向时间序列推理的多模态 LLM 后训练与评测链路，覆盖原生新模态对齐、可控轨迹合成、Agentic RL、多轮工具调用、RLVR 与高效推理。<strong>产出：</strong>一作 <strong>TameR</strong>、<strong>SPRINT</strong>（ICML 2026）及在投工作 <strong>IntentAD</strong>、<strong>G2AD</strong>，合作论文 <strong>ChatTS</strong>（VLDB 2025）与 <strong>FoundRoot</strong>（ICSE 2026）。</p>
-          </article>
-          <article>
-            <div class="row-heading"><h3>华为</h3><span>2024.9 - 2025.12</span></div>
-            <p>算法实习生。围绕光传输网络多源时空基础模型与基于多层级文档的评测数据集自动构建开展研究，参与 <strong>Eagle</strong>（FSE 2026，CCF A），并推动部分算法工程化落地。</p>
-          </article>
-          <article>
-            <div class="row-heading"><h3>中兴</h3><span>2024.1 - 2024.8</span></div>
-            <p>算法实习生。完成 AIOps 领域语料与问答数据合成、LLM 后训练和自动评测全流程，领域问答准确率较 Chat 基座提升<strong>超过 80%</strong>。合作论文 <strong>OpsEval</strong>（FSE 2025）与 <strong>TechSupportEval</strong>（IJCNN 2025）；在线排行榜访问量已超过<strong>200 万</strong>。</p>
-          </article>
-          <article>
-            <div class="row-heading"><h3>eBay</h3><span>2023.8 - 2023.12</span></div>
-            <p>算法工程师。面向复杂内部系统研发根因定位算法，在隐空间中建模系统指标之间的因果关系，并通过干预识别定位根因，算法已被工程化应用。<strong>产出：</strong>合作论文 <strong>MicroScope</strong>（KDD 2024，CCF A）。</p>
-          </article>
-          <article>
-            <div class="row-heading"><h3>RealAI（瑞莱智慧）</h3><span>2022.8 - 2023.7</span></div>
-            <p>算法工程师。围绕人脸识别模型安全开展物理世界 3D 对抗攻击研究，包括对抗纹理网格生成和 3D 隐空间补丁优化。<strong>产出：</strong>共同作者论文 <strong>AT3D</strong>（CVPR 2023，CCF A，Highlight）与 <strong>Face3DAdv</strong>（IJCV 2024，CCF A）。</p>
-          </article>
+        <div class="experience-groups">
+          <section class="experience-group" aria-labelledby="experience-llm">
+            <h3 class="experience-group-title" id="experience-llm"><span>01</span> LLM 相关实习</h3>
+            <div class="experience-list">
+              <article>
+                <div class="row-heading"><h3>字节跳动</h3><span>2025.9 - 2026.8</span></div>
+                <p>算法实习生。搭建面向时间序列推理的多模态 LLM 后训练与评测链路，覆盖可控数据合成、多轮工具调用轨迹构造、SFT、Agentic RL、轨迹评测、RLVR 与高效推理；扩展 <strong>LLaMA-Factory</strong>、<strong>VeRL</strong>、<strong>TRL GRPOTrainer</strong> 和 <strong>vLLM</strong> 以支持原生时序输入，相关工作包括 <strong>ChatTS</strong>、<strong>FoundRoot</strong>、<strong>IntentAD</strong> 与 <strong>G2AD</strong>。</p>
+              </article>
+              <article>
+                <div class="row-heading"><h3>中兴</h3><span>2024.1 - 2024.8</span></div>
+                <p>算法实习生。完成 AIOps 领域语料与问答数据合成、LLM 后训练和自动评测全流程，领域问答准确率较 Chat 基座提升<strong>超过 80%</strong>。合作论文 <strong>OpsEval</strong>（FSE 2025）与 <strong>TechSupportEval</strong>（IJCNN 2025）；在线排行榜访问量已超过<strong>200 万</strong>。</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="experience-group" aria-labelledby="experience-other">
+            <h3 class="experience-group-title" id="experience-other"><span>02</span> 其他实习</h3>
+            <div class="experience-list">
+              <article>
+                <div class="row-heading"><h3>字节跳动</h3><span>2025.1 - 2025.8</span></div>
+                <p>算法实习生。围绕时间序列基础模型的鲁棒性与推理效率开展研究，重点解决模型对近期观测的捷径依赖与超长上下文受限问题，产出一作论文 <strong>TameR</strong> 与 <strong>SPRINT</strong>（ICML 2026）。</p>
+              </article>
+              <article>
+                <div class="row-heading"><h3>华为</h3><span>2024.9 - 2025.12</span></div>
+                <p>算法实习生。围绕光传输网络多源时空基础模型与基于多层级文档的评测数据集自动构建开展研究，参与 <strong>Eagle</strong>（FSE 2026，CCF A），并推动部分算法工程化落地。</p>
+              </article>
+              <article>
+                <div class="row-heading"><h3>eBay</h3><span>2023.8 - 2023.12</span></div>
+                <p>算法实习生。面向复杂内部系统研发根因定位算法，在隐空间中建模系统指标之间的因果关系，并通过干预识别定位根因，算法已被工程化应用，产出合作论文 <strong>MicroScope</strong>（KDD 2024，CCF A）。</p>
+              </article>
+              <article>
+                <div class="row-heading"><h3>RealAI（瑞莱智慧）</h3><span>2022.8 - 2023.7</span></div>
+                <p>算法实习生。围绕人脸识别模型安全开展物理世界 3D 对抗攻击研究，包括对抗纹理网格生成和 3D 隐空间补丁优化，产出合作论文 <strong>AT3D</strong>（CVPR 2023，CCF A，Highlight）与 <strong>Face3DAdv</strong>（IJCV 2024，CCF A）。</p>
+              </article>
+            </div>
+          </section>
         </div>
       </section>
 

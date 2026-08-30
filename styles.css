@@ -638,6 +638,40 @@ h3 {
   gap: 14px;
 }
 
+.experience-groups {
+  display: grid;
+  gap: 42px;
+}
+
+.experience-group {
+  scroll-margin-top: 96px;
+}
+
+.experience-group-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+  font-size: 1.55rem;
+  line-height: 1.2;
+}
+
+.experience-group-title span {
+  display: inline-grid;
+  min-width: 36px;
+  height: 26px;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(47, 111, 221, 0.1);
+  color: var(--accent-dark);
+  font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+}
+
 .experience-list article {
   padding: 22px 24px;
 }
@@ -785,6 +819,14 @@ h3 {
   .section {
     margin-bottom: 70px;
     scroll-margin-top: 0;
+  }
+
+  .experience-groups {
+    gap: 34px;
+  }
+
+  .experience-group-title {
+    font-size: 1.38rem;
   }
 
   .paper-card {

@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,600;6..72,700;6..72,800&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260830-2" />
+    <link rel="stylesheet" href="styles.css?v=20260830-3" />
   </head>
   <body>
     <header class="site-header">
@@ -39,7 +39,7 @@
             <a href="https://netman.aiops.org/"><strong>NetMan Lab</strong></a>. My research focuses on <strong class="highlight">LLM post-training</strong>, <strong class="highlight">Agentic RL</strong>, <strong class="highlight">multimodal LLM alignment and reasoning</strong>, and their applications to <strong class="highlight">AIOps</strong>.
           </p>
           <p class="hero-bio">
-            My recent work spans <strong class="highlight">reliable LLM and agent post-training</strong>, including off-policy optimization for LLM and long-horizon agent training, user-intent-aligned multi-step decision making, and <strong>VLM-based active perception</strong> for fine-grained time-series anomaly localization.
+            My recent work follows two distinct lines. One studies <strong class="highlight">off-policy optimization in LLM post-training and long-horizon Agentic RL</strong>. The other develops <strong class="highlight">LLM post-training for time-series anomaly detection</strong>, covering user-intent alignment, memory retrieval, multi-turn tool use, and VLM-based active perception.
           </p>
           <p class="hero-bio">
             I received my B.E. degree in Computer Science and Technology from <strong class="highlight">Tsinghua University</strong> in 2023. I have held algorithm research internships at <strong>ByteDance</strong>, <strong>Huawei</strong>, <strong>ZTE</strong>, <strong>eBay</strong>, and <strong>RealAI</strong>, producing <strong class="highlight">two first-author ICML 2026 papers</strong> and <strong class="highlight">two first-author studies currently under review</strong>.
@@ -64,29 +64,29 @@
         <div class="section-header research-header">
           <div class="research-copy">
             <h2>Research Focus</h2>
-            <p>Building reliable LLM and agent systems that learn from multimodal evidence and support practical decision making.</p>
+            <p>Current work spans LLM post-training, Agentic RL, multimodal reasoning, and their applications to AIOps.</p>
           </div>
         </div>
         <div class="pillars-grid">
           <article class="pillar-card">
-            <h3>Agentic RL &amp; Reliable Post-Training</h3>
-            <p>Reliable policy updates for LLMs and long-horizon agents, together with <strong>intent-aligned multi-step decision making</strong>.</p>
-            <a class="pillar-link" href="#pub-post-training">View Agent Work →</a>
+            <h3>Off-Policy Optimization for LLM &amp; Agentic RL</h3>
+            <p>Off-policy learning in LLM RL and long-horizon agents under <strong>policy lag, stale trajectory reuse, and accumulated decision drift</strong>.</p>
+            <span class="pillar-status">Current research</span>
+          </article>
+          <article class="pillar-card">
+            <h3>LLM Post-Training for Time-Series Anomaly Detection</h3>
+            <p>Controllable trajectory synthesis, Agentic RL, multi-turn tool use, and VLM active perception for <strong>intent alignment and fine-grained localization</strong>.</p>
+            <a class="pillar-link" href="#pub-post-training">View Work →</a>
           </article>
           <article class="pillar-card">
             <h3>Multimodal LLM Alignment &amp; Reasoning</h3>
-            <p>Aligning time-series data with LLMs and training VLM agents to <strong>actively inspect fine-grained evidence</strong>.</p>
-            <a class="pillar-link" href="#pub-active-perception">View Work →</a>
+            <p>Native-modality alignment, structured reasoning, and efficient serving for <strong>time-series data in LLMs</strong>.</p>
+            <a class="pillar-link" href="#pub-multimodal">View Work →</a>
           </article>
           <article class="pillar-card">
             <h3>LLM Evaluation &amp; AIOps</h3>
-            <p>Evaluation pipelines for <strong>vertical-domain QA</strong>, document-grounded reasoning, benchmark generation, and automatic scoring.</p>
+            <p>High-quality evaluation data, comprehensive benchmarks, and automatic scoring methods for <strong>domain-specific LLMs</strong>.</p>
             <a class="pillar-link" href="#pub-llm-evaluation">View Work →</a>
-          </article>
-          <article class="pillar-card">
-            <h3>Time-Series Foundation Models</h3>
-            <p>Robust forecasting, global-context modeling, and training-free inference enhancement for <strong>long time-series contexts</strong>.</p>
-            <a class="pillar-link" href="#pub-long-sequence">View Work →</a>
           </article>
         </div>
       </section>
@@ -130,7 +130,7 @@
             <div class="card-thumb tone-blue"><span>Intent-Aligned<br />Agent</span></div>
             <div class="card-content">
               <div class="meta-row"><span>Under review</span><span>First author</span></div>
-              <p class="focus-line"><span>Research Focus</span><a href="#research">Agentic RL &amp; Reliable Post-Training</a></p>
+              <p class="focus-line"><span>Research Focus</span><a href="#research">LLM Post-Training for Time-Series Anomaly Detection</a></p>
               <h3>IntentAD: User-Intent-Aligned KPI Anomaly Detection Agent</h3>
               <p class="authors"><strong class="me">Longlong Xu</strong>, et al.</p>
               <p class="paper-desc">Builds a multi-step agentic decision process across <strong>intent parsing, autonomous memory retrieval, and tool execution</strong>, then injects intent-following and decision capabilities through <strong>Agentic RL</strong>; deployed in ByteDance's development environment.</p>
@@ -141,7 +141,7 @@
             <div class="card-thumb tone-purple"><span>Active<br />Perception</span></div>
             <div class="card-content">
               <div class="meta-row"><span>Under review</span><span>First author</span></div>
-              <p class="focus-line"><span>Research Focus</span><a href="#research">Multimodal LLM Alignment &amp; Reasoning</a></p>
+              <p class="focus-line"><span>Research Focus</span><a href="#research">LLM Post-Training for Time-Series Anomaly Detection</a></p>
               <h3>G2AD: VLM-Based Active Perception for Time-Series Anomaly Detection</h3>
               <p class="authors"><strong class="me">Longlong Xu</strong>, et al.</p>
               <p class="paper-desc">Builds a multi-turn inspection agent on <strong>Qwen3.5-9B</strong> that screens candidate regions globally, gathers high-resolution local evidence in parallel, refines boundaries across turns, and stops adaptively; trained through controllable data synthesis and two-stage <strong>SFT + GRPO</strong>.</p>
@@ -196,7 +196,7 @@
             </div>
           </article>
 
-          <article class="paper-card">
+          <article class="paper-card" id="pub-multimodal">
             <div class="card-thumb"><img src="assets/publications/generated/chatts.png" alt="ChatTS time-series multimodal LLM figure." /></div>
             <div class="card-content">
               <div class="meta-row"><span>VLDB 2025 · CCF A · 120+ citations</span><span>4th author · 2nd student author</span></div>
